@@ -1,0 +1,2541 @@
+<html lang="id"><head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIxNzc0MTU3NjgyNTMxNzI5Njc4OCIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjX2MyNzJmYzY5MTlmYWQzMTZfaW5kZXguaHRtbC04ODkifSwiZXhwIjoxNzkwOTAzNDE0LCJpYXQiOjE3OTA4OTk4MTQsImFsZyI6IlJTMjU2In0.ondye6ejIu_EVuwvjlwnNf2xZ_1dN2kEoNwSeU7Ts91J3iRPSGr4RB8GyoJJ6H5QhzB6nsagMU7qTAR-zhF1ZqQZaI6A9kAwiOvPPyyzJyiTdRGaNGwufvwuxYFN4pQlloBndx4yBUwODsoI0x2-iQmIZoVIG--5tLS22iKcBHH7PHtso-8_Z1LaDHGD9DApprLmRzp-Ak7uPV6ZCLG1hFbrDVZFZ0-lhbNrA08m4W-Q_hfXdgoXRzc6vJZbcy9FnxYAClrAJ5hS5RrMqcildMoVwahQvW1gzkCVfDLqfN-sxRLPaV8j9VJcZmOmOPKBbdDm3qIt27ilibyIe1uyOQ","c_c272fc6919fad316_index.html-889")</script><script data-bard-client-injected="true">
+  document.addEventListener('input', (event) => {
+    if (event.target && (event.target.isContentEditable || event.target.hasAttribute('contenteditable'))) {
+      const clonedDoc = document.cloneNode(true);
+      const injectedScripts = clonedDoc.querySelectorAll('[data-bard-client-injected="true"]');
+      injectedScripts.forEach(el => el.remove());
+      window.parent.postMessage({
+        type: 'inlineEdit',
+        html: '<!DOCTYPE html>\n' + clonedDoc.documentElement.outerHTML
+      }, '*');
+    }
+  });
+</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-client-injected="true">(function(){'use strict';var h=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,c,d){if(a==Array.prototype||a==Object.prototype)return a;a[c]=d.value;return a};function l(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var c=0;c<a.length;++c){var d=a[c];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var n=l(this);
+function p(a,c){if(c)a:{var d=n;a=a.split(".");for(var b=0;b<a.length-1;b++){var e=a[b];if(!(e in d))break a;d=d[e]}a=a[a.length-1];b=d[a];c=c(b);c!=b&&c!=null&&h(d,a,{configurable:!0,writable:!0,value:c})}}function r(a){function c(b){return a.next(b)}function d(b){return a.throw(b)}return new Promise(function(b,e){function f(g){g.done?b(g.value):Promise.resolve(g.value).then(c,d).then(f,e)}f(a.next())})}function t(a){return r(a())}
+p("Object.values",function(a){return a?a:function(c){var d=[],b;for(b in c)Object.prototype.hasOwnProperty.call(c,b)&&d.push(c[b]);return d}});p("Array.prototype.includes",function(a){return a?a:function(c,d){var b=this;b instanceof String&&(b=String(b));var e=b.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=b[d];if(f===c||Object.is(f,c))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function u(a,c){var d=a.style;c.backgroundColor&&(d.backgroundColor=c.backgroundColor);c.width&&(d.width=`${c.width}px`);c.height&&(d.height=`${c.height}px`);var b=c.style;b!=null&&Object.keys(b).forEach(e=>{d[e]=b[e]})};var v=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var c=[];for(let d=0,b=a.length;d<b;d++)c.push(a[d]);return c}let x=null;function y(a={}){return x?x:a.u?x=a.u:x=w(window.getComputedStyle(document.documentElement))}function z(a,c){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(c))?parseFloat(a.replace("px","")):0}
+function A(a,c={}){var d;if(!(d=c.width)){d=z(a,"border-left-width");var b=z(a,"border-right-width");d=a.clientWidth+d+b}(c=c.height)||(c=z(a,"border-top-width"),b=z(a,"border-bottom-width"),c=a.clientHeight+c+b);return{width:d,height:c}}function B(a){return new Promise((c,d)=>{var b=new Image;b.onload=()=>{b.decode().then(()=>{requestAnimationFrame(()=>c(b))})};b.onerror=d;b.crossOrigin="anonymous";b.decoding="async";b.src=a})}
+function C(a){return t(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(c=>`data:image/svg+xml;charset=utf-8,${c}`)})}
+function D(a,c,d){return t(function*(){var b=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");b.setAttribute("width",`${c}`);b.setAttribute("height",`${d}`);b.setAttribute("viewBox",`0 0 ${c} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");b.appendChild(e);e.appendChild(a);return C(b)})}
+var E=(a,c)=>{if(a instanceof c)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===c.name||E(a,c)};function aa(a,c){return y(c).map(d=>{var b=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${b}${e?" !important":""};`}).join(" ")}
+function F(a,c,d,b){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=v();try{c.className=`${c.className} ${f}`}catch(k){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(b=a.getPropertyValue("content"),b=`${a.cssText} content: '${b.replace(/'|"/g,"")}';`):b=aa(a,b);g.call(e,document.createTextNode(`${d}{${b}}`));c.appendChild(e)}};function G(a){return a.search(/^(data:)/)!==-1}function H(a,c,d){return t(function*(){var b=yield fetch(a,c);if(b.status===404)throw Error(`Resource "${b.url}" not found`);var e=yield b.blob();return new Promise((f,g)=>{var k=new FileReader;k.onerror=g;k.onloadend=()=>{try{f(d({A:b,result:k.result}))}catch(m){g(m)}};k.readAsDataURL(e)})})}const I={};function ba(a,c,d){var b=a.replace(/\?.*/,"");d&&(b=a);/ttf|otf|eot|woff2?/i.test(b)&&(b=b.replace(/.*\//,""));return c?`[${c}]${b}`:b}
+function J(a,c,d){return t(function*(){var b=ba(a,c,d.G);if(I[b]!=null)return I[b];d.C&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield H(a,d.l,({A:g,result:k})=>{c||(c=g.headers.get("Content-Type")||"");return k.split(/,/)[1]});var e=`data:${c};base64,${f}`}catch(f){e=d.o||""}return I[b]=e})};const K={R:"application/font-woff",S:"application/font-woff",O:"application/font-truetype",D:"application/vnd.ms-fontobject",J:"image/png",I:"image/jpeg",H:"image/jpeg",F:"image/gif",N:"image/tiff",M:"image/svg+xml",P:"image/webp"};function L(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function ca(a){return t(function*(){var c=a.toDataURL();return c==="data:,"?a.cloneNode(!1):B(c)})}function da(a,c){return t(function*(){if(a.currentSrc){var d=document.createElement("canvas");let b=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;b==null||b.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return B(d)}d=a.poster;d=yield J(d,K[L(d).toLowerCase()]||"",c);return B(d)})}
+function ea(a,c){return t(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield M(a.contentDocument.body,c,!0)}catch(d){}return a.cloneNode(!1)})}function fa(a,c){return t(function*(){return E(a,HTMLCanvasElement)?ca(a):E(a,HTMLVideoElement)?da(a,c):E(a,HTMLIFrameElement)?ea(a,c):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function ha(a,c,d){return t(function*(){if(c.tagName!=null&&c.tagName.toUpperCase()==="SVG")return c;var b=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)b=w(a.assignedNodes());else{let e;if(E(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))b=w(a.contentDocument.body.childNodes);else{let f;b=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(b.length===0||E(a,HTMLVideoElement))return c;yield b.reduce((e,f)=>e.then(()=>M(f,d)).then(g=>{g&&c.appendChild(g)}),Promise.resolve());
+return c})}function ia(a,c,d){var b=c.style;if(b){var e=window.getComputedStyle(a);e.cssText?(b.cssText=e.cssText,b.transformOrigin=e.transformOrigin):y(d).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);E(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&c.getAttribute("d")&&(g=`path(${c.getAttribute("d")})`);b.setProperty(f,g,e.getPropertyPriority(f))})}}
+function ja(a,c){E(a,HTMLSelectElement)&&(c=Array.from(c.children).find(d=>a.value===d.getAttribute("value")))&&c.setAttribute("selected","")}
+function ka(a,c){return t(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var b={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||b[f]||(b[f]=yield M(g,c,!0))}}d=Object.values(b);if(d.length){b=document.createElementNS("http://www.w3.org/1999/xhtml","svg");b.setAttribute("xmlns","http://www.w3.org/1999/xhtml");b.style.position="absolute";b.style.width="0";b.style.height="0";
+b.style.overflow="hidden";b.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");b.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(b)}return a})}
+function M(a,c,d){return t(function*(){return d||!c.filter||c.filter(a)?Promise.resolve(a).then(b=>fa(b,c)).then(b=>ha(a,b,c)).then(b=>{E(b,Element)&&(ia(a,b,c),F(a,b,":before",c),F(a,b,":after",c),E(a,HTMLTextAreaElement)&&(b.textContent=a.value),E(a,HTMLInputElement)&&b.setAttribute("value",a.value),ja(a,b));return b}).then(b=>ka(b,c)):null})};const N=/url\((['"]?)([^'"]+?)\1\)/g,la=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,ma=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function na(a){var c=[];a.replace(N,(d,b,e)=>{c.push(e);return d});return c.filter(d=>!G(d))}
+function oa(a,c,d,b){return t(function*(){try{let e=d?(new URL(c,d||void 0)).toString():c,f;f=yield J(e,K[L(c).toLowerCase()]||"",b);return a.replace(new RegExp(`(url\\(['"]?)(${c.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function pa(a,{K:c}){return c?a.replace(ma,d=>{for(;;){let [b,,e]=la.exec(d)||[];if(!e)return"";if(e===c)return`src: ${b};`}}):a}
+function O(a,c,d){return t(function*(){if(a.search(N)===-1)return a;var b=pa(a,d);return na(b).reduce((e,f)=>e.then(g=>oa(g,f,c,d)),Promise.resolve(b))})};function P(a,c,d){return t(function*(){var b,e=(b=c.style)==null?void 0:b.getPropertyValue(a);return e?(b=yield O(e,null,d),c.style.setProperty(a,b,c.style.getPropertyPriority(a)),!0):!1})}function qa(a,c){return t(function*(){(yield P("background",a,c))||(yield P("background-image",a,c));(yield P("mask",a,c))||(yield P("-webkit-mask",a,c))||(yield P("mask-image",a,c))||(yield P("-webkit-mask-image",a,c))})}
+function ra(a,c){return t(function*(){var d=E(a,HTMLImageElement);if(d&&!G(a.src)||E(a,SVGImageElement)&&!G(a.href.baseVal)){var b=d?a.src:a.href.baseVal,e=yield J(b,K[L(b).toLowerCase()]||"",c);yield new Promise((f,g)=>{a.onload=f;a.onerror=c.h?(...k)=>{try{f(c.h(...k))}catch(m){g(m)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function sa(a,c){return t(function*(){var d=w(a.childNodes).map(b=>Q(b,c));yield Promise.all(d).then(()=>a)})}function Q(a,c){return t(function*(){E(a,Element)&&(yield qa(a,c),yield ra(a,c),yield sa(a,c))})};const R={};function S(a){return t(function*(){var c=R[a];if(c!=null)return c;c=yield(yield fetch(a)).text();c={url:a,cssText:c};return R[a]=c})}function T(a,c){return t(function*(){var d=a.cssText,b=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>t(function*(){var g=f.replace(b,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return H(g,c.l,({result:k})=>{d=d.replace(f,`url(${k})`);return[f,k]})}));return Promise.all(e).then(()=>d)})}
+function U(a){if(a==null)return[];var c=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var b=d.exec(a);if(b===null)break;c.push(b[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(b=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=b.exec(a),e===null)break;else d.lastIndex=b.lastIndex;else b.lastIndex=
+d.lastIndex;c.push(e[0])}return c}
+function ta(a,c){return t(function*(){var d=[],b=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let k=g+1;f=S(f.href).then(m=>T(m,c)).then(m=>U(m).forEach(q=>{try{e.insertRule(q,q.startsWith("@import")?k+=1:e.cssRules.length)}catch(Ia){}})).catch(()=>{});b.push(f)}})}catch(f){let g=a.find(k=>k.href==null)||document.styleSheets[0];e.href!=null&&b.push(S(e.href).then(k=>T(k,c)).then(k=>U(k).forEach(m=>{g.insertRule(m,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(b).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function ua(a){return a.filter(c=>c.type===CSSRule.FONT_FACE_RULE).filter(c=>c.style.getPropertyValue("src").search(N)!==-1)}function va(a,c){return t(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=w(a.ownerDocument.styleSheets);d=yield ta(d,c);return ua(d)})}
+function wa(a){function c(b){(b.style.fontFamily||getComputedStyle(b).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(b.children).forEach(e=>{e instanceof HTMLElement&&c(e)})}var d=new Set;c(a);return d}function xa(a,c){return t(function*(){var d=yield va(a,c),b=wa(a);return(yield Promise.all(d.filter(e=>b.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>O(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,c)))).join("\n")})}
+function ya(a,c){return t(function*(){var d=c.m!=null?c.m:c.B?null:yield xa(a,c);if(d){let b=document.createElement("style");b.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(b,a.firstChild):a.appendChild(b)}})};function za(a,c={}){return t(function*(){var {width:d,height:b}=A(a,c),e=yield M(a,c,!0);yield ya(e,c);yield Q(e,c);u(e,c);return yield D(e,d,b)})}
+function Aa(a,c={}){return t(function*(){var {width:d,height:b}=A(a,c),e=yield za(a,c);e=yield B(e);var f=document.createElement("canvas"),g=f.getContext("2d"),k=c.v||window.devicePixelRatio||1,m=c.j||d,q=c.i||b;f.width=m*k;f.height=q*k;!c.L&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${m}`;f.style.height=`${q}`;c.backgroundColor&&(g.fillStyle=c.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function Ba(a,c={}){return t(function*(){return(yield Aa(a,c)).toDataURL()})};const Ca=["gemini.google.com","corp.google.com","proxy.googlers.com"];function V(){return document.body.querySelectorAll('[class*="animate"]').length>0}function W(a,c){var d=document.createElement("canvas");d.width=a;d.height=c;return d.toDataURL("image/png")}const X=W(1,1);
+function Da(a){a=a.querySelectorAll("svg, svg *");var c=[];for(let b of Array.from(a)){if(!(b instanceof SVGElement))continue;a=window.getComputedStyle(b);let e=b.getAttribute("style");a.fill&&(b.style.fill=a.fill);a.stroke&&(b.style.stroke=a.stroke);a.strokeWidth&&(b.style.strokeWidth=a.strokeWidth);a.strokeDasharray&&(b.style.strokeDasharray=a.strokeDasharray);a.strokeLinecap&&(b.style.strokeLinecap=a.strokeLinecap);a.strokeLinejoin&&(b.style.strokeLinejoin=a.strokeLinejoin);a.strokeOpacity&&(b.style.strokeOpacity=
+a.strokeOpacity);a.fillOpacity&&(b.style.fillOpacity=a.fillOpacity);a.opacity&&(b.style.opacity=a.opacity);a.transform&&a.transform!=="none"&&(b.style.transform=a.transform);var d=b.tagName.toLowerCase();if(d==="text"||d==="tspan"||d==="textpath"){a.fontFamily&&(b.style.fontFamily=a.fontFamily);a.fontSize&&(b.style.fontSize=a.fontSize);a.fontWeight&&(b.style.fontWeight=a.fontWeight);a.fontStyle&&(b.style.fontStyle=a.fontStyle);a.letterSpacing&&(b.style.letterSpacing=a.letterSpacing);a.wordSpacing&&
+(b.style.wordSpacing=a.wordSpacing);if((d=a.textAnchor||a.getPropertyValue("text-anchor"))&&d!=="none"){b.style.textAnchor=d;let f=b.getAttribute("text-anchor");b.setAttribute("text-anchor",d);c.push(()=>{f===null?b.removeAttribute("text-anchor"):b.setAttribute("text-anchor",f)})}if((d=a.dominantBaseline||a.getPropertyValue("dominant-baseline"))&&d!=="none"){b.style.dominantBaseline=d;let f=b.getAttribute("dominant-baseline");b.setAttribute("dominant-baseline",d);c.push(()=>{f===null?b.removeAttribute("dominant-baseline"):
+b.setAttribute("dominant-baseline",f)})}if((d=a.alignmentBaseline||a.getPropertyValue("alignment-baseline"))&&d!=="none"){b.style.alignmentBaseline=d;let f=b.getAttribute("alignment-baseline");b.setAttribute("alignment-baseline",d);c.push(()=>{f===null?b.removeAttribute("alignment-baseline"):b.setAttribute("alignment-baseline",f)})}if(a=a.paintOrder||a.getPropertyValue("paint-order"))b.style.paintOrder=a}c.push(()=>{e===null?b.removeAttribute("style"):b.setAttribute("style",e)})}return()=>{for(let b of c)b()}}
+function Ea(a){a=a.querySelectorAll("*");var c=[];for(let b of Array.from(a)){if(!(b instanceof HTMLElement))continue;if(b instanceof SVGElement)continue;a=b.tagName.toLowerCase();if(a==="script"||a==="style"||a==="canvas"||a==="img"||a==="svg")continue;var d=window.getComputedStyle(b);if(d.display==="none"||d.visibility==="hidden")continue;if(d.display==="flex"||d.display==="grid"||d.display==="table")continue;let e;if((e=b.textContent)==null||!e.trim())continue;if(d.whiteSpace.startsWith("pre"))continue;
+if(Array.from(b.children).some(g=>{if(!(g instanceof HTMLElement))return!1;g=window.getComputedStyle(g).display;return g==="block"||g==="flex"||g==="grid"||g==="table"}))continue;d=Number(d.fontSize.replace("px",""))||16;let f=b.clientHeight;d=f>0&&f<=Math.ceil(d*2.2);a=a==="button"||a==="label"||b.classList.contains("lumi-btn")||b.classList.contains("lumi-caption")||b.classList.contains("lumi-body-m-emphasized")||b.classList.contains("attr-key")||b.classList.contains("attr-name")||b.classList.contains("attr-type")||
+b.id.includes("badge")||b.id.includes("title");if(d||a){let g=b.style.whiteSpace,k=b.style.minWidth;b.style.whiteSpace="nowrap";b.style.minWidth="max-content";c.push(()=>{b.style.whiteSpace=g;b.style.minWidth=k})}}return()=>{for(let b of c)b()}}function Y(){var a=document.body,c=Da(a),d=Ea(a);return()=>{d();c()}}
+function Z(a){return t(function*(){var c=Math.max(2,window.devicePixelRatio||1),d=Math.max(a.offsetWidth,1),b=Math.max(a.offsetHeight,1);try{return yield Ba(a,{width:d*c,height:b*c,j:d*c,i:b*c,v:1,style:{transform:`scale(${c})`,transformOrigin:"top left",width:`${d}px`,height:`${b}px`},B:!0,filter:e=>{if(e.tagName==="IMG"){let f=e.getAttribute("src");if(!f||f.trim()===""||e.style.display==="none")return!1}return!0},o:X,h:()=>X})}catch(e){return W(d*c,b*c)}})}
+function Fa(){return t(function*(){var a=document.body.offsetWidth,c=document.body.offsetHeight,d=document.body.cloneNode(!0),b=d.querySelectorAll('[class*="animate"]');for(let e of Array.from(b))e.classList.remove(...Array.from(e.classList).filter(f=>f.startsWith("animate")));d.style.width=`${a}px`;d.style.height=`${c}px`;return d})}
+function Ga(a){return t(function*(){var c=Y();try{let d=document.body;if(V()){let e=yield Fa();d=e;document.body.appendChild(e)}let b=yield Z(d);V()&&document.body.removeChild(d);window.parent.postMessage({type:"SEND_SCREENSHOT",image:b,topOffset:document.documentElement.scrollTop},a.origin)}finally{c()}})}
+function Ha(a){return t(function*(){var c=Y();try{let d={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(d,a.origin)}finally{c()}})}window.addEventListener("message",a=>t(function*(){if(Ca.some(d=>a.origin.includes(d))){var c=a.data;c&&(c.type==="MAKE_SCREENSHOT"&&(yield Ga(a)),c.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ha(a)))}}));
+})();</script><script data-bard-client-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-client-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.j=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.i="";var l=0,t=null,r=null,q=[],F=new TextEncoder,G=new TextDecoder;
+c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*16|0;return(f===
+"x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;(g=t)==null||g.postMessage(a)}};
+Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-client-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi SARPRAS - SMK Widya Praja Ungaran</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <!-- Chart.js for Analytics -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#0284c7',
+                            600: '#0369a1',
+                            700: '#075985',
+                            800: '#0c4a6e',
+                            900: '#0f172a',
+                        },
+                        accent: {
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: #f1f5f9; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        @media print {
+            .no-print { display: none !important; }
+            .print-only { display: block !important; }
+            body { background: white; color: black; }
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Inter, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.pointer-events-auto{pointer-events:auto}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.-bottom-10{bottom:-2.5rem}.-right-10{right:-2.5rem}.left-3{left:0.75rem}.left-3\.5{left:0.875rem}.right-5{right:1.25rem}.top-3{top:0.75rem}.top-5{top:1.25rem}.z-10{z-index:10}.z-40{z-index:40}.z-50{z-index:50}.mx-3{margin-left:0.75rem;margin-right:0.75rem}.mx-auto{margin-left:auto;margin-right:auto}.my-3{margin-top:0.75rem;margin-bottom:0.75rem}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.me-0{margin-inline-end:0px}.ml-auto{margin-left:auto}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.mt-12{margin-top:3rem}.mt-3{margin-top:0.75rem}.mt-6{margin-top:1.5rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-12{height:3rem}.h-16{height:4rem}.h-64{height:16rem}.h-8{height:2rem}.h-9{height:2.25rem}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-12{width:3rem}.w-16{width:4rem}.w-4{width:1rem}.w-8{width:2rem}.w-9{width:2.25rem}.w-full{width:100%}.min-w-0{min-width:0px}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-lg{max-width:32rem}.max-w-md{max-width:28rem}.max-w-sm{max-width:24rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.border-collapse{border-collapse:collapse}.translate-y-2{--tw-translate-y:0.5rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.list-inside{list-style-position:inside}.list-decimal{list-style-type:decimal}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-1{gap:0.25rem}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.divide-y > :not([hidden]) ~ :not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px * calc(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px * var(--tw-divide-y-reverse))}.divide-slate-100 > :not([hidden]) ~ :not([hidden]){--tw-divide-opacity:1;border-color:rgb(241 245 249 / var(--tw-divide-opacity, 1))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-t{border-top-width:1px}.border-amber-200{--tw-border-opacity:1;border-color:rgb(253 230 138 / var(--tw-border-opacity, 1))}.border-brand-500\/30{border-color:rgb(2 132 199 / 0.3)}.border-brand-500\/40{border-color:rgb(2 132 199 / 0.4)}.border-emerald-200{--tw-border-opacity:1;border-color:rgb(167 243 208 / var(--tw-border-opacity, 1))}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.border-slate-700\/60{border-color:rgb(51 65 85 / 0.6)}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59 / var(--tw-border-opacity, 1))}.border-slate-800\/80{border-color:rgb(30 41 59 / 0.8)}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.border-slate-300{--tw-border-opacity:1;border-color:rgb(203 213 225 / var(--tw-border-opacity, 1))}.bg-amber-400{--tw-bg-opacity:1;background-color:rgb(251 191 36 / var(--tw-bg-opacity, 1))}.bg-amber-50{--tw-bg-opacity:1;background-color:rgb(255 251 235 / var(--tw-bg-opacity, 1))}.bg-amber-500{--tw-bg-opacity:1;background-color:rgb(245 158 11 / var(--tw-bg-opacity, 1))}.bg-amber-500\/20{background-color:rgb(245 158 11 / 0.2)}.bg-brand-50{--tw-bg-opacity:1;background-color:rgb(240 247 255 / var(--tw-bg-opacity, 1))}.bg-brand-500\/20{background-color:rgb(2 132 199 / 0.2)}.bg-brand-500\/30{background-color:rgb(2 132 199 / 0.3)}.bg-brand-600{--tw-bg-opacity:1;background-color:rgb(3 105 161 / var(--tw-bg-opacity, 1))}.bg-brand-700{--tw-bg-opacity:1;background-color:rgb(7 89 133 / var(--tw-bg-opacity, 1))}.bg-emerald-50{--tw-bg-opacity:1;background-color:rgb(236 253 245 / var(--tw-bg-opacity, 1))}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.bg-indigo-600{--tw-bg-opacity:1;background-color:rgb(79 70 229 / var(--tw-bg-opacity, 1))}.bg-rose-50{--tw-bg-opacity:1;background-color:rgb(255 241 242 / var(--tw-bg-opacity, 1))}.bg-rose-600{--tw-bg-opacity:1;background-color:rgb(225 29 72 / var(--tw-bg-opacity, 1))}.bg-rose-700{--tw-bg-opacity:1;background-color:rgb(190 18 60 / var(--tw-bg-opacity, 1))}.bg-sky-50{--tw-bg-opacity:1;background-color:rgb(240 249 255 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-slate-800\/80{background-color:rgb(30 41 59 / 0.8)}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-slate-900\/60{background-color:rgb(15 23 42 / 0.6)}.bg-slate-900\/80{background-color:rgb(15 23 42 / 0.8)}.bg-teal-500{--tw-bg-opacity:1;background-color:rgb(20 184 166 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-amber-100{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-emerald-100{--tw-bg-opacity:1;background-color:rgb(209 250 229 / var(--tw-bg-opacity, 1))}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-purple-100{--tw-bg-opacity:1;background-color:rgb(243 232 255 / var(--tw-bg-opacity, 1))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-brand-700{--tw-gradient-from:#075985 var(--tw-gradient-from-position);--tw-gradient-to:rgb(7 89 133 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-brand-900\/50{--tw-gradient-from:rgb(15 23 42 / 0.5) var(--tw-gradient-from-position);--tw-gradient-to:rgb(15 23 42 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-indigo-900{--tw-gradient-from:#312e81 var(--tw-gradient-from-position);--tw-gradient-to:rgb(49 46 129 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-brand-800{--tw-gradient-to:rgb(12 74 110 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #0c4a6e var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-slate-900{--tw-gradient-to:rgb(15 23 42 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #0f172a var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-brand-900{--tw-gradient-to:#0f172a var(--tw-gradient-to-position)}.to-indigo-900{--tw-gradient-to:#312e81 var(--tw-gradient-to-position)}.to-indigo-900\/30{--tw-gradient-to:rgb(49 46 129 / 0.3) var(--tw-gradient-to-position)}.p-1{padding:0.25rem}.p-2{padding:0.5rem}.p-2\.5{padding:0.625rem}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.p-1\.5{padding:0.375rem}.px-1{padding-left:0.25rem;padding-right:0.25rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.pb-4{padding-bottom:1rem}.pl-9{padding-left:2.25rem}.pr-3{padding-right:0.75rem}.pt-3{padding-top:0.75rem}.pt-4{padding-top:1rem}.pt-2{padding-top:0.5rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-\[220px\]{font-size:220px}.text-\[9px\]{font-size:9px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-wide{letter-spacing:0.025em}.tracking-wider{letter-spacing:0.05em}.text-amber-200{--tw-text-opacity:1;color:rgb(253 230 138 / var(--tw-text-opacity, 1))}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.text-amber-400{--tw-text-opacity:1;color:rgb(251 191 36 / var(--tw-text-opacity, 1))}.text-amber-600{--tw-text-opacity:1;color:rgb(217 119 6 / var(--tw-text-opacity, 1))}.text-amber-700{--tw-text-opacity:1;color:rgb(180 83 9 / var(--tw-text-opacity, 1))}.text-amber-900{--tw-text-opacity:1;color:rgb(120 53 15 / var(--tw-text-opacity, 1))}.text-brand-100{--tw-text-opacity:1;color:rgb(224 239 254 / var(--tw-text-opacity, 1))}.text-brand-600{--tw-text-opacity:1;color:rgb(3 105 161 / var(--tw-text-opacity, 1))}.text-brand-700{--tw-text-opacity:1;color:rgb(7 89 133 / var(--tw-text-opacity, 1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.text-emerald-600{--tw-text-opacity:1;color:rgb(5 150 105 / var(--tw-text-opacity, 1))}.text-emerald-800{--tw-text-opacity:1;color:rgb(6 95 70 / var(--tw-text-opacity, 1))}.text-emerald-950{--tw-text-opacity:1;color:rgb(2 44 34 / var(--tw-text-opacity, 1))}.text-indigo-400{--tw-text-opacity:1;color:rgb(129 140 248 / var(--tw-text-opacity, 1))}.text-rose-400{--tw-text-opacity:1;color:rgb(251 113 133 / var(--tw-text-opacity, 1))}.text-rose-600{--tw-text-opacity:1;color:rgb(225 29 72 / var(--tw-text-opacity, 1))}.text-sky-400{--tw-text-opacity:1;color:rgb(56 189 248 / var(--tw-text-opacity, 1))}.text-sky-600{--tw-text-opacity:1;color:rgb(2 132 199 / var(--tw-text-opacity, 1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87 / var(--tw-text-opacity, 1))}.text-purple-700{--tw-text-opacity:1;color:rgb(126 34 206 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-10{opacity:0.1}.opacity-0{opacity:0}.opacity-70{opacity:0.7}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-inner{--tw-shadow:inset 0 2px 4px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:inset 0 2px 4px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:border-amber-500:hover{--tw-border-opacity:1;border-color:rgb(245 158 11 / var(--tw-border-opacity, 1))}.hover\:border-brand-500:hover{--tw-border-opacity:1;border-color:rgb(2 132 199 / var(--tw-border-opacity, 1))}.hover\:border-emerald-500:hover{--tw-border-opacity:1;border-color:rgb(16 185 129 / var(--tw-border-opacity, 1))}.hover\:bg-amber-50:hover{--tw-bg-opacity:1;background-color:rgb(255 251 235 / var(--tw-bg-opacity, 1))}.hover\:bg-brand-50:hover{--tw-bg-opacity:1;background-color:rgb(240 247 255 / var(--tw-bg-opacity, 1))}.hover\:bg-brand-700:hover{--tw-bg-opacity:1;background-color:rgb(7 89 133 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-50:hover{--tw-bg-opacity:1;background-color:rgb(236 253 245 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-700:hover{--tw-bg-opacity:1;background-color:rgb(4 120 87 / var(--tw-bg-opacity, 1))}.hover\:bg-indigo-700:hover{--tw-bg-opacity:1;background-color:rgb(67 56 202 / var(--tw-bg-opacity, 1))}.hover\:bg-rose-700:hover{--tw-bg-opacity:1;background-color:rgb(190 18 60 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-100:hover{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-200:hover{--tw-bg-opacity:1;background-color:rgb(226 232 240 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-700:hover{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-800:hover{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-900:hover{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-700:hover{--tw-bg-opacity:1;background-color:rgb(29 78 216 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-600:hover{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-50:hover{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.hover\:bg-white\/20:hover{background-color:rgb(255 255 255 / 0.2)}.hover\:text-rose-400:hover{--tw-text-opacity:1;color:rgb(251 113 133 / var(--tw-text-opacity, 1))}.hover\:text-slate-800:hover{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:text-brand-600:hover{--tw-text-opacity:1;color:rgb(3 105 161 / var(--tw-text-opacity, 1))}.hover\:text-rose-600:hover{--tw-text-opacity:1;color:rgb(225 29 72 / var(--tw-text-opacity, 1))}.hover\:text-rose-800:hover{--tw-text-opacity:1;color:rgb(159 18 57 / var(--tw-text-opacity, 1))}.hover\:opacity-100:hover{opacity:1}.hover\:shadow-lg:hover{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:shadow-md:hover{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:bg-white:focus{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-brand-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(2 132 199 / var(--tw-ring-opacity, 1))}.group:hover .group-hover\:scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (min-width: 640px){.sm\:flex{display:flex}.sm\:flex-row{flex-direction:row}}@media (min-width: 768px){.md\:col-span-2{grid-column:span 2 / span 2}.md\:w-64{width:16rem}.md\:w-auto{width:auto}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:p-6{padding:1.5rem}}</style></head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col custom-scrollbar">
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" class="fixed top-5 right-5 z-50 flex flex-col gap-3 max-w-sm w-full pointer-events-none"></div>
+
+    <!-- Multiuser Login Modal Screen -->
+    <div id="loginScreen" class="fixed inset-0 z-40 bg-slate-900/80 backdrop-blur-md items-center justify-center p-4 hidden">
+        <div class="bg-white w-full max-w-md rounded-2xl shadow-2xl overflow-hidden border border-slate-100 flex flex-col">
+            <!-- Header Banner -->
+            <div class="bg-gradient-to-r from-brand-700 to-brand-900 text-white p-6 text-center relative">
+                <div class="w-16 h-16 bg-white/10 rounded-2xl mx-auto flex items-center justify-center mb-3 backdrop-blur-sm border border-white/20 shadow-inner">
+                    <i class="fa-solid me-0 fa-school text-3xl text-amber-400"></i>
+                </div>
+                <h2 class="text-xl font-bold tracking-wide">SIM-SARPRAS</h2>
+                <p class="text-xs text-brand-100 mt-1">SMK Widya Praja Ungaran</p>
+                <div class="text-[10px] bg-amber-400 text-slate-900 font-extrabold uppercase px-3 py-1 rounded-full inline-block mt-3 shadow-sm">
+                    Multi-User Authentication
+                </div>
+            </div>
+
+            <!-- Login Form -->
+            <div class="p-6 flex-1 flex flex-col justify-between">
+                <div>
+                    <p class="text-xs text-slate-500 mb-4 text-center">Pilih salah satu akun demo di bawah ini untuk masuk secara cepat, atau gunakan kredensial tersimpan.</p>
+                    
+                    <!-- Role Switcher Shortcuts -->
+                    <div class="grid grid-cols-3 gap-2 mb-6">
+                        <button onclick="quickLogin('admin')" class="p-2.5 border border-slate-200 rounded-xl hover:border-brand-500 hover:bg-brand-50 transition text-center group">
+                            <i class="fa-solid fa-user-shield text-brand-600 group-hover:scale-110 transition-transform block mb-1"></i>
+                            <span class="text-xs font-bold text-slate-700 block">Admin</span>
+                            <span class="text-[10px] text-slate-400 block">Akses Penuh</span>
+                        </button>
+                        <button onclick="quickLogin('sarpras')" class="p-2.5 border border-slate-200 rounded-xl hover:border-emerald-500 hover:bg-emerald-50 transition text-center group">
+                            <i class="fa-solid fa-boxes-packing text-emerald-600 group-hover:scale-110 transition-transform block mb-1"></i>
+                            <span class="text-xs font-bold text-slate-700 block">Sarpras</span>
+                            <span class="text-[10px] text-slate-400 block">Petugas Logistik</span>
+                        </button>
+                        <button onclick="quickLogin('user')" class="p-2.5 border border-slate-200 rounded-xl hover:border-amber-500 hover:bg-amber-50 transition text-center group">
+                            <i class="fa-solid fa-user-graduate text-amber-600 group-hover:scale-110 transition-transform block mb-1"></i>
+                            <span class="text-xs font-bold text-slate-700 block">User</span>
+                            <span class="text-[10px] text-slate-400 block">Guru / Siswa</span>
+                        </button>
+                    </div>
+
+                    <form id="loginForm" onsubmit="handleLogin(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-medium text-slate-700 mb-1">Email / Username</label>
+                            <div class="relative">
+                                <i class="fa-solid fa-envelope absolute left-3.5 top-3 text-slate-400 text-xs"></i>
+                                <input type="text" id="loginEmail" required="" class="w-full text-xs pl-9 pr-3 py-2.5 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition" placeholder="email@smkwidyapraja.sch.id">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-slate-700 mb-1">Kata Sandi</label>
+                            <div class="relative">
+                                <i class="fa-solid fa-lock absolute left-3.5 top-3 text-slate-400 text-xs"></i>
+                                <input type="password" id="loginPassword" required="" class="w-full text-xs pl-9 pr-3 py-2.5 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white transition" placeholder="••••••••">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="w-full py-2.5 bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                            <span>Masuk ke Sistem</span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Footer Note -->
+                <div class="mt-6 pt-4 border-t border-slate-100 text-center">
+                    <p class="text-[11px] text-slate-400">© 2026 Tim IT SMK Widya Praja Ungaran. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Application Container -->
+    <div id="appContainer" class="flex-1 flex flex-col md:flex-row min-h-screen">
+
+        <!-- Sidebar -->
+        <aside class="w-full md:w-64 bg-slate-900 text-slate-300 flex flex-col shrink-0 no-print">
+            <!-- Brand Info -->
+            <div class="p-4 border-b border-slate-800 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-brand-600 text-white flex items-center justify-center font-bold text-lg shadow-md shrink-0">
+                    WP
+                </div>
+                <div class="overflow-hidden">
+                    <h1 class="text-sm font-bold text-white leading-tight truncate">SARPRAS SMK WP</h1>
+                    <p class="text-[11px] text-slate-400 truncate">Ungaran - Kab. Semarang</p>
+                </div>
+            </div>
+
+            <!-- Active User Card in Sidebar -->
+            <div class="p-3 mx-3 my-3 bg-slate-800/80 border border-slate-700/60 rounded-xl flex items-center gap-3">
+                <div id="userAvatar" class="w-9 h-9 rounded-full bg-brand-500/20 text-brand-400 flex items-center justify-center font-bold text-xs uppercase border border-brand-500/40 shrink-0">
+                    US
+                </div>
+                <div class="overflow-hidden flex-1">
+                    <h3 id="userName" class="text-xs font-semibold text-white truncate">Admin Utama (Suprianto, S.Kom)</h3>
+                    <div id="userBadge" class="inline-block px-2 py-0.5 text-[9px] font-extrabold rounded bg-brand-500/20 text-brand-300 uppercase tracking-wider mt-0.5">ADMINISTRATOR</div>
+                </div>
+                <button onclick="logout()" class="text-slate-400 hover:text-rose-400 transition p-1 text-xs" title="Keluar Akun">
+                    <i class="fa-solid fa-power-off"></i>
+                </button>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="flex-1 px-3 py-2 space-y-1 text-xs font-medium custom-scrollbar overflow-y-auto">
+                <a href="#" onclick="switchTab('dashboard')" id="nav-dashboard" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-white transition active">
+                    <i class="fa-solid fa-chart-pie w-4 text-center text-brand-400"></i>
+                    <span>Dashboard Utama</span>
+                </a>
+
+                <a href="#" onclick="switchTab('inventory')" id="nav-inventory" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-white transition">
+                    <i class="fa-solid fa-boxes-stacked w-4 text-center text-emerald-400"></i>
+                    <span>Katalog &amp; Inventaris</span>
+                </a>
+
+                <a href="#" onclick="switchTab('peminjaman')" id="nav-peminjaman" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-white transition">
+                    <i class="fa-solid fa-hand-holding-hand w-4 text-center text-amber-400"></i>
+                    <span>Peminjaman Sarpras</span>
+                    <span id="badgePendingPinjam" class="ml-auto bg-amber-500/20 text-amber-300 text-[10px] font-bold px-1.5 py-0.5 rounded-full">1</span>
+                </a>
+
+                <a href="#" onclick="switchTab('pengaduan')" id="nav-pengaduan" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-white transition">
+                    <i class="fa-solid fa-wrench w-4 text-center text-rose-400"></i>
+                    <span>Pengaduan Kerusakan</span>
+                </a>
+
+                <!-- Admin & Sarpras Only Section -->
+                <div id="navGroupAdmin" class="pt-3 border-t border-slate-800/80">
+                    <p class="px-3 text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-2">Manajemen Sarpras</p>
+                    
+                    <a href="#" onclick="switchTab('users')" id="nav-users" class="nav-item role-admin-only flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-white transition" style="display: flex;">
+                        <i class="fa-solid fa-users-gear w-4 text-center text-indigo-400"></i>
+                        <span>Manajemen Akun User</span>
+                    </a>
+
+                    <a href="#" onclick="switchTab('laporan')" id="nav-laporan" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-white transition">
+                        <i class="fa-solid fa-file-invoice w-4 text-center text-sky-400"></i>
+                        <span>Laporan &amp; Cetak Data</span>
+                    </a>
+                </div>
+
+                <!-- Publication Guide Section -->
+                <div class="pt-3 border-t border-slate-800/80">
+                    <p class="px-3 text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-2">Publikasi Web</p>
+                    <a href="#" onclick="switchTab('publikasi')" id="nav-publikasi" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-300 hover:bg-slate-800 hover:text-white transition bg-gradient-to-r from-brand-900/50 to-indigo-900/30 border border-brand-500/30 bg-slate-800 text-white font-bold">
+                        <i class="fa-solid fa-globe w-4 text-center text-amber-300 animate-pulse"></i>
+                        <span class="font-bold text-amber-200">Cara Publikasi Website</span>
+                    </a>
+                </div>
+            </nav>
+
+            <!-- Bottom Multiuser Quick Switch Button -->
+            <div class="p-3 border-t border-slate-800">
+                <button onclick="openLoginModal()" class="w-full py-2 px-3 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold rounded-lg flex items-center justify-center gap-2 border border-slate-700 transition">
+                    <i class="fa-solid fa-users-between-lines text-amber-400"></i>
+                    <span>Ganti Akun Role</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content View Area -->
+        <div class="flex-1 flex flex-col min-w-0 overflow-hidden bg-slate-50">
+            
+            <!-- Top Navbar Header -->
+            <header class="bg-white border-b border-slate-200 px-4 py-3 flex items-center justify-between shadow-sm no-print">
+                <div class="flex items-center gap-3">
+                    <h2 id="currentTabTitle" class="text-base font-bold text-slate-800">Panduan &amp; Langkah Publikasi Web</h2>
+                    <span id="currentRoleTag" class="text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600 border border-slate-200">Role: ADMINISTRATOR</span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <button onclick="openPublishModal()" class="hidden sm:flex items-center gap-1.5 px-3 py-1.5 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold rounded-lg shadow-sm transition">
+                        <i class="fa-solid fa-rocket"></i>
+                        <span>Publikasikan Web</span>
+                    </button>
+                    <button onclick="quickDemoDataReset()" class="p-2 text-slate-500 hover:text-slate-800 hover:bg-slate-100 rounded-lg text-xs transition" title="Reset Data Simulasi Demo">
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Dynamic Section Contents -->
+            <main class="flex-1 overflow-y-auto p-4 md:p-6 custom-scrollbar">
+
+                <!-- SECTION 1: DASHBOARD -->
+                <section id="section-dashboard" class="tab-section space-y-6 hidden">
+                    <!-- Banner Welcome -->
+                    <div class="bg-gradient-to-r from-brand-700 via-brand-800 to-indigo-900 rounded-2xl p-6 text-white shadow-lg relative overflow-hidden">
+                        <div class="relative z-10 max-w-2xl">
+                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-amber-300 text-xs font-semibold backdrop-blur-md mb-3 border border-white/10">
+                                <i class="fa-solid fa-sparkles"></i> Selamat Datang di SIM-SARPRAS
+                            </div>
+                            <h2 class="text-2xl font-extrabold tracking-tight mb-2" id="welcomeUserText">Halo, Admin Utama (Suprianto, S.Kom)!</h2>
+                            <p class="text-xs text-brand-100 leading-relaxed mb-4">
+                                Sistem Informasi Pengelolaan dan Peminjaman Sarana Prasarana SMK Widya Praja Ungaran. Pantau ketersediaan barang, ajukan peminjaman, dan kelola keluhan aset secara online.
+                            </p>
+                            <div class="flex flex-wrap gap-2" id="dashboardQuickActions">
+                    <button onclick="switchTab('peminjaman')" class="px-3.5 py-2 bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-bold rounded-lg shadow transition">
+                        <i class="fa-solid fa-check-double"></i> Verifikasi Peminjaman (1)
+                    </button>
+                    <button onclick="openModalAddItem()" class="px-3.5 py-2 bg-white/10 hover:bg-white/20 text-white text-xs font-bold rounded-lg transition border border-white/20">
+                        <i class="fa-solid fa-plus"></i> Tambah Inventaris Baru
+                    </button>
+                </div>
+                        </div>
+                        <!-- Background Accent Graphic -->
+                        <div class="absolute -right-10 -bottom-10 opacity-10 text-white pointer-events-none">
+                            <i class="fa-solid fa-boxes-stacked text-[220px]"></i>
+                        </div>
+                    </div>
+
+                    <!-- Metrics Stats Grid -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs font-medium text-slate-500">Total Inventaris</span>
+                                <div class="w-8 h-8 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center text-sm">
+                                    <i class="fa-solid fa-boxes-stacked"></i>
+                                </div>
+                            </div>
+                            <div class="text-xl font-extrabold text-slate-800" id="statTotalBarang">141</div>
+                            <p class="text-[10px] text-slate-400 mt-1">Aset terdata di sekolah</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs font-medium text-slate-500">Sedang Dipinjam</span>
+                                <div class="w-8 h-8 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center text-sm">
+                                    <i class="fa-solid fa-hand-holding"></i>
+                                </div>
+                            </div>
+                            <div class="text-xl font-extrabold text-amber-600" id="statSedangDipinjam">1</div>
+                            <p class="text-[10px] text-slate-400 mt-1">Barang di luar gudang</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs font-medium text-slate-500">Permintaan Pending</span>
+                                <div class="w-8 h-8 rounded-lg bg-sky-50 text-sky-600 flex items-center justify-center text-sm">
+                                    <i class="fa-solid fa-clock-rotate-left"></i>
+                                </div>
+                            </div>
+                            <div class="text-xl font-extrabold text-sky-600" id="statPendingPinjam">1</div>
+                            <p class="text-[10px] text-slate-400 mt-1">Butuh verifikasi sarpras</p>
+                        </div>
+
+                        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-xs font-medium text-slate-500">Laporan Kerusakan</span>
+                                <div class="w-8 h-8 rounded-lg bg-rose-50 text-rose-600 flex items-center justify-center text-sm">
+                                    <i class="fa-solid fa-triangle-exclamation"></i>
+                                </div>
+                            </div>
+                            <div class="text-xl font-extrabold text-rose-600" id="statKerusakan">1</div>
+                            <p class="text-[10px] text-slate-400 mt-1">Barang rusak/butuh servis</p>
+                        </div>
+                    </div>
+
+                    <!-- Charts Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="md:col-span-2 bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                            <h3 class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-4 flex items-center gap-2">
+                                <i class="fa-solid fa-chart-column text-brand-600"></i>
+                                Statistik Peminjaman Sarpras Per Bulan
+                            </h3>
+                            <div class="h-64 relative">
+                                <canvas id="chartPeminjaman" style="box-sizing: border-box; display: block; height: 256px; width: 701.3px;" width="876" height="320"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                            <h3 class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-4 flex items-center gap-2">
+                                <i class="fa-solid fa-chart-pie text-emerald-600"></i>
+                                Kondisi Aset Inventaris
+                            </h3>
+                            <div class="h-64 relative flex items-center justify-center">
+                                <canvas id="chartKondisi" style="box-sizing: border-box; display: block; height: 256px; width: 317.9px;" width="397" height="320"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 2: KATALOG & INVENTARIS -->
+                <section id="section-inventory" class="tab-section space-y-4 hidden">
+                    <!-- Filter and Action Bar -->
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col md:flex-row gap-3 items-center justify-between">
+                        <div class="flex flex-1 flex-col sm:flex-row gap-2 w-full">
+                            <!-- Search -->
+                            <div class="relative flex-1">
+                                <i class="fa-solid fa-magnifying-glass absolute left-3 top-3 text-slate-400 text-xs"></i>
+                                <input type="text" id="invSearchInput" oninput="renderInventoryTable()" placeholder="Cari kode, nama barang, atau lokasi..." class="w-full text-xs pl-9 pr-3 py-2 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500 focus:bg-white">
+                            </div>
+                            <!-- Category Filter -->
+                            <select id="invCatFilter" onchange="renderInventoryTable()" class="text-xs py-2 px-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500">
+                                <option value="ALL">Semua Kategori</option>
+                                <option value="Elektronik &amp; Laboratorium">Elektronik &amp; Lab</option>
+                                <option value="Perlengkapan Kelas">Perlengkapan Kelas</option>
+                                <option value="Olahraga">Olahraga</option>
+                                <option value="Kesenian &amp; Multimedia">Kesenian &amp; Multimedia</option>
+                            </select>
+                        </div>
+
+                        <!-- Add Item Button (Admin/Sarpras only) -->
+                        <div class="w-full md:w-auto flex gap-2">
+                            <button onclick="openModalAddItem()" class="role-admin-sarpras-only w-full md:w-auto px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold rounded-lg shadow-sm transition flex items-center justify-center gap-2" style="display: inline-flex;">
+                                <i class="fa-solid fa-plus"></i>
+                                <span>Tambah Barang Baru</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Inventory Data Table -->
+                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left text-xs">
+                                <thead class="bg-slate-50 text-slate-500 uppercase font-bold text-[10px] tracking-wider border-b border-slate-200">
+                                    <tr>
+                                        <th class="p-3.5">Kode Barang</th>
+                                        <th class="p-3.5">Nama &amp; Spesifikasi</th>
+                                        <th class="p-3.5">Kategori</th>
+                                        <th class="p-3.5">Lokasi Ruang</th>
+                                        <th class="p-3.5 text-center">Stok (Total/Ada)</th>
+                                        <th class="p-3.5 text-center">Kondisi</th>
+                                        <th class="p-3.5 text-center">Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="inventoryTableBody" class="divide-y divide-slate-100 font-medium text-slate-700">
+                <tr class="hover:bg-slate-50 transition">
+                    <td class="p-3.5 font-mono text-[11px] font-bold text-slate-800">INV-ELK-001</td>
+                    <td class="p-3.5">
+                        <span class="font-bold text-slate-800 block">Proyektor LCD Epson EB-X400</span>
+                        <span class="text-[10px] text-slate-400">Total: 8 Unit</span>
+                    </td>
+                    <td class="p-3.5"><span class="px-2 py-0.5 rounded-full bg-slate-100 text-slate-600 text-[10px] font-semibold">Elektronik &amp; Laboratorium</span></td>
+                    <td class="p-3.5 text-slate-600">Lab Komputer RPL 1</td>
+                    <td class="p-3.5 text-center">
+                        <span class="font-bold text-emerald-600">5</span> / 8
+                    </td>
+                    <td class="p-3.5 text-center">
+                        <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-700">
+                            Baik
+                        </span>
+                    </td>
+                    <td class="p-3.5 text-center">
+                        <div class="flex items-center justify-center gap-1">
+                            
+                                <button onclick="editItem(1)" class="p-1.5 text-slate-500 hover:text-brand-600 hover:bg-slate-100 rounded" title="Edit Barang"><i class="fa-solid fa-pen"></i></button>
+                                <button onclick="deleteItem(1)" class="p-1.5 text-slate-500 hover:text-rose-600 hover:bg-slate-100 rounded" title="Hapus Barang"><i class="fa-solid fa-trash"></i></button>
+                            
+                            <button onclick="quickPinjam(1)" class="px-2.5 py-1 bg-brand-600 hover:bg-brand-700 text-white rounded text-[10px] font-bold shadow-sm transition">
+                                Pinjam
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr class="hover:bg-slate-50 transition">
+                    <td class="p-3.5 font-mono text-[11px] font-bold text-slate-800">INV-ELK-002</td>
+                    <td class="p-3.5">
+                        <span class="font-bold text-slate-800 block">Laptop ASUS Core i5 (Praktikum)</span>
+                        <span class="text-[10px] text-slate-400">Total: 20 Unit</span>
+                    </td>
+                    <td class="p-3.5"><span class="px-2 py-0.5 rounded-full bg-slate-100 text-slate-600 text-[10px] font-semibold">Elektronik &amp; Laboratorium</span></td>
+                    <td class="p-3.5 text-slate-600">Ruang Sarpras</td>
+                    <td class="p-3.5 text-center">
+                        <span class="font-bold text-emerald-600">16</span> / 20
+                    </td>
+                    <td class="p-3.5 text-center">
+                        <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-700">
+                            Baik
+                        </span>
+                    </td>
+                    <td class="p-3.5 text-center">
+                        <div class="flex items-center justify-center gap-1">
+                            
+                                <button onclick="editItem(2)" class="p-1.5 text-slate-500 hover:text-brand-600 hover:bg-slate-100 rounded" title="Edit Barang"><i class="fa-solid fa-pen"></i></button>
+                                <button onclick="deleteItem(2)" class="p-1.5 text-slate-500 hover:text-rose-600 hover:bg-slate-100 rounded" title="Hapus Barang"><i class="fa-solid fa-trash"></i></button>
+                            
+                            <button onclick="quickPinjam(2)" class="px-2.5 py-1 bg-brand-600 hover:bg-brand-700 text-white rounded text-[10px] font-bold shadow-sm transition">
+                                Pinjam
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr class="hover:bg-slate-50 transition">
+                    <td class="p-3.5 font-mono text-[11px] font-bold text-slate-800">INV-AUD-001</td>
+                    <td class="p-3.5">
+                        <span class="font-bold text-slate-800 block">Sound System Portable Wireless</span>
+                        <span class="text-[10px] text-slate-400">Total: 3 Unit</span>
+                    </td>
+                    <td class="p-3.5"><span class="px-2 py-0.5 rounded-full bg-slate-100 text-slate-600 text-[10px] font-semibold">Kesenian &amp; Multimedia</span></td>
+                    <td class="p-3.5 text-slate-600">Aula Utama Sekolah</td>
+                    <td class="p-3.5 text-center">
+                        <span class="font-bold text-emerald-600">2</span> / 3
+                    </td>
+                    <td class="p-3.5 text-center">
+                        <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-700">
+                            Baik
+                        </span>
+                    </td>
+                    <td class="p-3.5 text-center">
+                        <div class="flex items-center justify-center gap-1">
+                            
+                                <button onclick="editItem(3)" class="p-1.5 text-slate-500 hover:text-brand-600 hover:bg-slate-100 rounded" title="Edit Barang"><i class="fa-solid fa-pen"></i></button>
+                                <button onclick="deleteItem(3)" class="p-1.5 text-slate-500 hover:text-rose-600 hover:bg-slate-100 rounded" title="Hapus Barang"><i class="fa-solid fa-trash"></i></button>
+                            
+                            <button onclick="quickPinjam(3)" class="px-2.5 py-1 bg-brand-600 hover:bg-brand-700 text-white rounded text-[10px] font-bold shadow-sm transition">
+                                Pinjam
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr class="hover:bg-slate-50 transition">
+                    <td class="p-3.5 font-mono text-[11px] font-bold text-slate-800">INV-OLG-001</td>
+                    <td class="p-3.5">
+                        <span class="font-bold text-slate-800 block">Bola Voli Molten Original</span>
+                        <span class="text-[10px] text-slate-400">Total: 10 Unit</span>
+                    </td>
+                    <td class="p-3.5"><span class="px-2 py-0.5 rounded-full bg-slate-100 text-slate-600 text-[10px] font-semibold">Olahraga</span></td>
+                    <td class="p-3.5 text-slate-600">Gudang Olahraga</td>
+                    <td class="p-3.5 text-center">
+                        <span class="font-bold text-emerald-600">8</span> / 10
+                    </td>
+                    <td class="p-3.5 text-center">
+                        <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-700">
+                            Baik
+                        </span>
+                    </td>
+                    <td class="p-3.5 text-center">
+                        <div class="flex items-center justify-center gap-1">
+                            
+                                <button onclick="editItem(4)" class="p-1.5 text-slate-500 hover:text-brand-600 hover:bg-slate-100 rounded" title="Edit Barang"><i class="fa-solid fa-pen"></i></button>
+                                <button onclick="deleteItem(4)" class="p-1.5 text-slate-500 hover:text-rose-600 hover:bg-slate-100 rounded" title="Hapus Barang"><i class="fa-solid fa-trash"></i></button>
+                            
+                            <button onclick="quickPinjam(4)" class="px-2.5 py-1 bg-brand-600 hover:bg-brand-700 text-white rounded text-[10px] font-bold shadow-sm transition">
+                                Pinjam
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            
+                <tr class="hover:bg-slate-50 transition">
+                    <td class="p-3.5 font-mono text-[11px] font-bold text-slate-800">INV-KLS-001</td>
+                    <td class="p-3.5">
+                        <span class="font-bold text-slate-800 block">Kursi Lipat Futura (Hitam)</span>
+                        <span class="text-[10px] text-slate-400">Total: 100 Unit</span>
+                    </td>
+                    <td class="p-3.5"><span class="px-2 py-0.5 rounded-full bg-slate-100 text-slate-600 text-[10px] font-semibold">Perlengkapan Kelas</span></td>
+                    <td class="p-3.5 text-slate-600">Gudang Serbaguna</td>
+                    <td class="p-3.5 text-center">
+                        <span class="font-bold text-emerald-600">95</span> / 100
+                    </td>
+                    <td class="p-3.5 text-center">
+                        <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-700">
+                            Rusak Ringan
+                        </span>
+                    </td>
+                    <td class="p-3.5 text-center">
+                        <div class="flex items-center justify-center gap-1">
+                            
+                                <button onclick="editItem(5)" class="p-1.5 text-slate-500 hover:text-brand-600 hover:bg-slate-100 rounded" title="Edit Barang"><i class="fa-solid fa-pen"></i></button>
+                                <button onclick="deleteItem(5)" class="p-1.5 text-slate-500 hover:text-rose-600 hover:bg-slate-100 rounded" title="Hapus Barang"><i class="fa-solid fa-trash"></i></button>
+                            
+                            <button onclick="quickPinjam(5)" class="px-2.5 py-1 bg-brand-600 hover:bg-brand-700 text-white rounded text-[10px] font-bold shadow-sm transition">
+                                Pinjam
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 3: PEMINJAMAN SARPRAS -->
+                <section id="section-peminjaman" class="tab-section space-y-4 hidden">
+                    <div class="flex items-center justify-between bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                        <div>
+                            <h3 class="text-sm font-bold text-slate-800">Daftar Transaksi Peminjaman</h3>
+                            <p class="text-xs text-slate-500">Kelola pengajuan pinjam barang oleh siswa dan guru.</p>
+                        </div>
+                        <button onclick="openModalFormPinjam()" class="px-4 py-2 bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold rounded-lg shadow-sm transition flex items-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Ajukan Peminjaman</span>
+                        </button>
+                    </div>
+
+                    <!-- Table Peminjaman -->
+                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left text-xs">
+                                <thead class="bg-slate-50 text-slate-500 uppercase font-bold text-[10px] tracking-wider border-b border-slate-200">
+                                    <tr>
+                                        <th class="p-3.5">ID TRX</th>
+                                        <th class="p-3.5">Peminjam</th>
+                                        <th class="p-3.5">Barang</th>
+                                        <th class="p-3.5">Tgl Pinjam / Kembali</th>
+                                        <th class="p-3.5">Jumlah</th>
+                                        <th class="p-3.5 text-center">Status</th>
+                                        <th class="p-3.5 text-center">Aksi / Verifikasi</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="peminjamanTableBody" class="divide-y divide-slate-100 text-slate-700">
+                <tr class="hover:bg-slate-50 transition">
+                    <td class="p-3.5 font-mono text-[11px] font-bold text-slate-500">TRX-1</td>
+                    <td class="p-3.5 font-bold text-slate-800">Ibu Nurul Hidayah, S.Pd</td>
+                    <td class="p-3.5 text-slate-700">Proyektor LCD Epson EB-X400</td>
+                    <td class="p-3.5 text-slate-500 text-[11px]">2026-10-01 s/d 2026-10-02</td>
+                    <td class="p-3.5 font-bold">1 Unit</td>
+                    <td class="p-3.5 text-center">
+                        <span class="px-2.5 py-1 rounded-full text-[10px] font-extrabold bg-emerald-100 text-emerald-700">
+                            Disetujui
+                        </span>
+                    </td>
+                    <td class="p-3.5 text-center">
+                        
+                        
+                            <button onclick="returnPinjam(1)" class="px-2.5 py-1 bg-blue-600 text-white rounded text-[10px] font-bold shadow-sm hover:bg-blue-700">Proses Kembali</button>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr class="hover:bg-slate-50 transition">
+                    <td class="p-3.5 font-mono text-[11px] font-bold text-slate-500">TRX-2</td>
+                    <td class="p-3.5 font-bold text-slate-800">Rizky Pratama (Siswa)</td>
+                    <td class="p-3.5 text-slate-700">Bola Voli Molten Original</td>
+                    <td class="p-3.5 text-slate-500 text-[11px]">2026-10-02 s/d -</td>
+                    <td class="p-3.5 font-bold">2 Unit</td>
+                    <td class="p-3.5 text-center">
+                        <span class="px-2.5 py-1 rounded-full text-[10px] font-extrabold bg-amber-100 text-amber-700">
+                            Pending
+                        </span>
+                    </td>
+                    <td class="p-3.5 text-center">
+                        
+                            <div class="flex items-center justify-center gap-1">
+                                <button onclick="approvePinjam(2)" class="px-2 py-1 bg-emerald-600 text-white rounded text-[10px] font-bold shadow-sm hover:bg-emerald-700">Setujui</button>
+                                <button onclick="rejectPinjam(2)" class="px-2 py-1 bg-rose-600 text-white rounded text-[10px] font-bold shadow-sm hover:bg-rose-700">Tolak</button>
+                            </div>
+                        
+                        
+                        
+                    </td>
+                </tr>
+            </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 4: PENGADUAN KERUSAKAN -->
+                <section id="section-pengaduan" class="tab-section space-y-4 hidden">
+                    <div class="flex items-center justify-between bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                        <div>
+                            <h3 class="text-sm font-bold text-slate-800">Laporan Kerusakan &amp; Servis Aset</h3>
+                            <p class="text-xs text-slate-500">Sampaikan keluhan fasilitas atau ajukan perbaikan barang.</p>
+                        </div>
+                        <button onclick="openModalFormPengaduan()" class="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white text-xs font-bold rounded-lg shadow-sm transition flex items-center gap-2">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                            <span>Buat Laporan Kerusakan</span>
+                        </button>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="pengaduanListGrid">
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="text-[10px] font-bold text-slate-400"><i class="fa-solid fa-calendar"></i> 2026-09-28</span>
+                        <span class="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold bg-amber-100 text-amber-700">Proses Servis</span>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold text-slate-800">Proyektor LCD Epson EB-X400</h4>
+                        <p class="text-[11px] text-slate-500 mt-1">Lampu indikator berkedip merah dan gambar buram.</p>
+                    </div>
+                    <div class="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px]">
+                        <span class="text-slate-600">Pelapor: <strong>Ibu Nurul Hidayah, S.Pd</strong></span>
+                        
+                            <select onchange="updatePengaduanStatus(1, this.value)" class="text-[10px] font-bold py-1 px-2 bg-slate-100 rounded border border-slate-200">
+                                <option value="Dilaporkan">Dilaporkan</option>
+                                <option value="Proses Servis" selected="">Proses Servis</option>
+                                <option value="Selesai">Selesai Perbaikan</option>
+                            </select>
+                        
+                    </div>
+                </div>
+            </div>
+                </section>
+
+                <!-- SECTION 5: MANAJEMEN USER (ADMIN ONLY) -->
+                <section id="section-users" class="tab-section space-y-4 hidden">
+                    <div class="bg-amber-50 border border-amber-200 p-4 rounded-xl flex items-center justify-between">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-user-shield text-amber-600 text-2xl"></i>
+                            <div>
+                                <h4 class="text-xs font-bold text-amber-900">Area Hak Akses Administrator</h4>
+                                <p class="text-[11px] text-amber-700">Anda dapat mendaftarkan pengguna baru, mengganti role hak akses, dan menonaktifkan akun.</p>
+                            </div>
+                        </div>
+                        <button onclick="openModalAddUser()" class="px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-lg shadow-sm transition flex items-center gap-2 shrink-0">
+                            <i class="fa-solid fa-user-plus text-amber-400"></i>
+                            <span>Tambah User Baru</span>
+                        </button>
+                    </div>
+
+                    <div class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left text-xs">
+                                <thead class="bg-slate-50 text-slate-500 uppercase font-bold text-[10px] tracking-wider border-b border-slate-200">
+                                    <tr>
+                                        <th class="p-3.5">User</th>
+                                        <th class="p-3.5">Email</th>
+                                        <th class="p-3.5">Role / Hak Akses</th>
+                                        <th class="p-3.5">Jabatan / Kelas</th>
+                                        <th class="p-3.5 text-center">Status</th>
+                                        <th class="p-3.5 text-center">Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="usersTableBody" class="divide-y divide-slate-100 text-slate-700">
+                <tr class="hover:bg-slate-50 transition">
+                    <td class="p-3.5 font-bold text-slate-800">Admin Utama (Suprianto, S.Kom)</td>
+                    <td class="p-3.5 text-slate-600">admin@smkwidyapraja.sch.id</td>
+                    <td class="p-3.5">
+                        <span class="px-2.5 py-0.5 rounded text-[10px] font-extrabold uppercase bg-purple-100 text-purple-700">admin</span>
+                    </td>
+                    <td class="p-3.5 text-slate-600">Kepala Lab &amp; SIM</td>
+                    <td class="p-3.5 text-center"><span class="text-emerald-600 font-bold text-[10px]">Aktif</span></td>
+                    <td class="p-3.5 text-center">
+                        <span class="text-slate-400 text-[10px]">Aktif</span>
+                    </td>
+                </tr>
+            
+                <tr class="hover:bg-slate-50 transition">
+                    <td class="p-3.5 font-bold text-slate-800">Haryanto (Petugas Sarpras)</td>
+                    <td class="p-3.5 text-slate-600">sarpras@smkwidyapraja.sch.id</td>
+                    <td class="p-3.5">
+                        <span class="px-2.5 py-0.5 rounded text-[10px] font-extrabold uppercase bg-emerald-100 text-emerald-700">sarpras</span>
+                    </td>
+                    <td class="p-3.5 text-slate-600">Staf Sarpras</td>
+                    <td class="p-3.5 text-center"><span class="text-emerald-600 font-bold text-[10px]">Aktif</span></td>
+                    <td class="p-3.5 text-center">
+                        
+                            <button onclick="deleteUser(2)" class="text-rose-600 hover:text-rose-800 font-bold text-[11px] p-1">Hapus</button>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="hover:bg-slate-50 transition">
+                    <td class="p-3.5 font-bold text-slate-800">Ibu Nurul Hidayah, S.Pd</td>
+                    <td class="p-3.5 text-slate-600">guru@smkwidyapraja.sch.id</td>
+                    <td class="p-3.5">
+                        <span class="px-2.5 py-0.5 rounded text-[10px] font-extrabold uppercase bg-amber-100 text-amber-700">user</span>
+                    </td>
+                    <td class="p-3.5 text-slate-600">Guru Produktif RPL</td>
+                    <td class="p-3.5 text-center"><span class="text-emerald-600 font-bold text-[10px]">Aktif</span></td>
+                    <td class="p-3.5 text-center">
+                        
+                            <button onclick="deleteUser(3)" class="text-rose-600 hover:text-rose-800 font-bold text-[11px] p-1">Hapus</button>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="hover:bg-slate-50 transition">
+                    <td class="p-3.5 font-bold text-slate-800">Rizky Pratama (Siswa)</td>
+                    <td class="p-3.5 text-slate-600">siswa@smkwidyapraja.sch.id</td>
+                    <td class="p-3.5">
+                        <span class="px-2.5 py-0.5 rounded text-[10px] font-extrabold uppercase bg-amber-100 text-amber-700">user</span>
+                    </td>
+                    <td class="p-3.5 text-slate-600">Siswa - XII RPL 1</td>
+                    <td class="p-3.5 text-center"><span class="text-emerald-600 font-bold text-[10px]">Aktif</span></td>
+                    <td class="p-3.5 text-center">
+                        
+                            <button onclick="deleteUser(4)" class="text-rose-600 hover:text-rose-800 font-bold text-[11px] p-1">Hapus</button>
+                        
+                    </td>
+                </tr>
+            
+                <tr class="hover:bg-slate-50 transition">
+                    <td class="p-3.5 font-bold text-slate-800">hamam</td>
+                    <td class="p-3.5 text-slate-600">hamamchanafi90@gmail.com</td>
+                    <td class="p-3.5">
+                        <span class="px-2.5 py-0.5 rounded text-[10px] font-extrabold uppercase bg-purple-100 text-purple-700">admin</span>
+                    </td>
+                    <td class="p-3.5 text-slate-600">Guru / Siswa</td>
+                    <td class="p-3.5 text-center"><span class="text-emerald-600 font-bold text-[10px]">Aktif</span></td>
+                    <td class="p-3.5 text-center">
+                        
+                            <button onclick="deleteUser(1790899867556)" class="text-rose-600 hover:text-rose-800 font-bold text-[11px] p-1">Hapus</button>
+                        
+                    </td>
+                </tr>
+            </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 6: LAPORAN & CETAK -->
+                <section id="section-laporan" class="tab-section space-y-4 hidden">
+                    <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                        <h3 class="text-sm font-bold text-slate-800 mb-2">Cetak Laporan Inventaris &amp; Peminjaman</h3>
+                        <p class="text-xs text-slate-500 mb-4">Gunakan tombol di bawah untuk membuat cetakan PDF atau pratinjau rekapitulasi data SARPRAS SMK Widya Praja Ungaran.</p>
+                        
+                        <div class="flex flex-wrap gap-3">
+                            <button onclick="printReport('inventaris')" class="px-4 py-2.5 bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold rounded-lg transition flex items-center gap-2">
+                                <i class="fa-solid fa-print"></i>
+                                <span>Cetak Laporan Inventaris (PDF)</span>
+                            </button>
+
+                            <button onclick="printReport('peminjaman')" class="px-4 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold rounded-lg transition flex items-center gap-2">
+                                <i class="fa-solid fa-file-pdf"></i>
+                                <span>Cetak Rekap Peminjaman</span>
+                            </button>
+
+                            <button onclick="exportDataJSON()" class="px-4 py-2.5 bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold rounded-lg transition flex items-center gap-2">
+                                <i class="fa-solid fa-download"></i>
+                                <span>Export Data Backup (JSON)</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Printable Container Preview -->
+                    <div id="printableArea" class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm print-only">
+                        <div class="text-center border-b-2 border-slate-800 pb-4 mb-6">
+                            <h2 class="text-lg font-bold text-slate-900 uppercase">SMK WIDYA PRAJA UNGARAN</h2>
+                            <p class="text-xs text-slate-600">Jl. Gatot Subroto No. 55 Ungaran, Kabupaten Semarang, Jawa Tengah</p>
+                            <p class="text-xs font-semibold text-brand-700 mt-1">LAPORAN SARANA DAN PRASARANA SEKOLAH</p>
+                        </div>
+                        <div id="printTableContainer">
+                    <h3 class="text-sm font-bold text-center mb-3">DAFTAR INVENTARIS SARANA PRASARANA</h3>
+                    <table class="w-full text-left text-xs border-collapse border border-slate-300">
+                        <thead>
+                            <tr class="bg-slate-100">
+                                <th class="border border-slate-300 p-2">Kode</th>
+                                <th class="border border-slate-300 p-2">Nama Barang</th>
+                                <th class="border border-slate-300 p-2">Kategori</th>
+                                <th class="border border-slate-300 p-2">Lokasi</th>
+                                <th class="border border-slate-300 p-2 text-center">Total</th>
+                                <th class="border border-slate-300 p-2 text-center">Kondisi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                                <tr>
+                                    <td class="border border-slate-300 p-2 font-mono">INV-ELK-001</td>
+                                    <td class="border border-slate-300 p-2">Proyektor LCD Epson EB-X400</td>
+                                    <td class="border border-slate-300 p-2">Elektronik &amp; Laboratorium</td>
+                                    <td class="border border-slate-300 p-2">Lab Komputer RPL 1</td>
+                                    <td class="border border-slate-300 p-2 text-center">8</td>
+                                    <td class="border border-slate-300 p-2 text-center">Baik</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td class="border border-slate-300 p-2 font-mono">INV-ELK-002</td>
+                                    <td class="border border-slate-300 p-2">Laptop ASUS Core i5 (Praktikum)</td>
+                                    <td class="border border-slate-300 p-2">Elektronik &amp; Laboratorium</td>
+                                    <td class="border border-slate-300 p-2">Ruang Sarpras</td>
+                                    <td class="border border-slate-300 p-2 text-center">20</td>
+                                    <td class="border border-slate-300 p-2 text-center">Baik</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td class="border border-slate-300 p-2 font-mono">INV-AUD-001</td>
+                                    <td class="border border-slate-300 p-2">Sound System Portable Wireless</td>
+                                    <td class="border border-slate-300 p-2">Kesenian &amp; Multimedia</td>
+                                    <td class="border border-slate-300 p-2">Aula Utama Sekolah</td>
+                                    <td class="border border-slate-300 p-2 text-center">3</td>
+                                    <td class="border border-slate-300 p-2 text-center">Baik</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td class="border border-slate-300 p-2 font-mono">INV-OLG-001</td>
+                                    <td class="border border-slate-300 p-2">Bola Voli Molten Original</td>
+                                    <td class="border border-slate-300 p-2">Olahraga</td>
+                                    <td class="border border-slate-300 p-2">Gudang Olahraga</td>
+                                    <td class="border border-slate-300 p-2 text-center">10</td>
+                                    <td class="border border-slate-300 p-2 text-center">Baik</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td class="border border-slate-300 p-2 font-mono">INV-KLS-001</td>
+                                    <td class="border border-slate-300 p-2">Kursi Lipat Futura (Hitam)</td>
+                                    <td class="border border-slate-300 p-2">Perlengkapan Kelas</td>
+                                    <td class="border border-slate-300 p-2">Gudang Serbaguna</td>
+                                    <td class="border border-slate-300 p-2 text-center">100</td>
+                                    <td class="border border-slate-300 p-2 text-center">Rusak Ringan</td>
+                                </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                        <div class="mt-12 flex justify-between text-xs text-slate-700">
+                            <div>
+                                <p>Mengetahui,</p>
+                                <p class="font-bold mt-12">Kepala SMK Widya Praja</p>
+                            </div>
+                            <div class="text-right">
+                                <p>Ungaran, <span id="printDate">2 Oktober 2026</span></p>
+                                <p class="font-bold mt-12">Koordinator SARPRAS</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECTION 7: PANDUAN PUBLIKASI WEBSITE -->
+                <section id="section-publikasi" class="tab-section space-y-6">
+                    <div class="bg-gradient-to-r from-indigo-900 via-slate-900 to-brand-900 rounded-2xl p-6 text-white shadow-xl">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="p-2 bg-amber-400 text-slate-900 rounded-lg text-lg font-bold">
+                                <i class="fa-solid fa-globe"></i>
+                            </span>
+                            <h2 class="text-xl font-extrabold tracking-tight">Panduan Publikasi Website Secara Umum (Online)</h2>
+                        </div>
+                        <p class="text-xs text-slate-300 leading-relaxed max-w-3xl">
+                            Aplikasi web Sistem Informasi SARPRAS SMK Widya Praja Ungaran ini dibuat dalam arsitektur **Single-File Ready Web Application** (HTML + Tailwind + Pure JavaScript). Anda dapat mempublikasikan website ini langsung agar bisa diakses seluruh guru, siswa, dan publik secara gratis maupun menggunakan domain sekolah.
+                        </p>
+                    </div>
+
+                    <!-- Methods Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        
+                        <!-- Method 1: GitHub Pages -->
+                        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                            <div>
+                                <div class="w-10 h-10 rounded-xl bg-slate-900 text-white flex items-center justify-center font-bold text-lg mb-3">
+                                    <i class="fa-brands fa-github"></i>
+                                </div>
+                                <h3 class="text-sm font-bold text-slate-800 mb-1">Cara 1: GitHub Pages (Gratis 100%)</h3>
+                                <p class="text-xs text-slate-500 mb-4">Sangat direkomendasikan untuk hosting cepat &amp; gratis tanpa server backend tambahan.</p>
+                                
+                                <ol class="text-xs text-slate-600 space-y-2 list-decimal list-inside">
+                                    <li>Unduh file halaman ini dengan menekan tombol **"Download Source File HTML"** di bawah.</li>
+                                    <li>Buat akun di <a href="https://github.com" target="_blank" class="text-brand-600 underline font-semibold">GitHub.com</a>.</li>
+                                    <li>Buat repository baru, contoh: <code class="bg-slate-100 px-1 py-0.5 rounded text-slate-800">sarpras-smkwidyapraja</code>.</li>
+                                    <li>Upload file ini dan beri nama <code class="bg-slate-100 px-1 py-0.5 rounded font-bold text-slate-800">index.html</code>.</li>
+                                    <li>Buka menu **Settings -&gt; Pages**, pilih branch `main` lalu Simpan.</li>
+                                    <li>Website Anda langsung aktif online di URL: <code class="text-emerald-600 font-bold">username.github.io/sarpras-smkwidyapraja</code>.</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <!-- Method 2: Netlify / Vercel -->
+                        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                            <div>
+                                <div class="w-10 h-10 rounded-xl bg-teal-500 text-white flex items-center justify-center font-bold text-lg mb-3">
+                                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                                </div>
+                                <h3 class="text-sm font-bold text-slate-800 mb-1">Cara 2: Netlify Drop (Drag &amp; Drop)</h3>
+                                <p class="text-xs text-slate-500 mb-4">Metode paling instant tanpa perlu coding atau Git command.</p>
+                                
+                                <ol class="text-xs text-slate-600 space-y-2 list-decimal list-inside">
+                                    <li>Unduh file <code class="bg-slate-100 px-1 py-0.5 rounded">index.html</code> aplikasi ini.</li>
+                                    <li>Buka <a href="https://app.netlify.com/drop" target="_blank" class="text-brand-600 underline font-semibold">app.netlify.com/drop</a>.</li>
+                                    <li>Drag &amp; drop folder yang berisi file <code class="bg-slate-100 px-1 py-0.5 rounded">index.html</code> tersebut.</li>
+                                    <li>Netlify akan memberikan domain acak gratis (misal: <code class="text-emerald-600 font-bold">sarpras-smk.netlify.app</code>) dalam 5 detik!</li>
+                                    <li>Anda juga dapat menghubungkan domain resmi SMK (misal: <code class="text-brand-600 font-bold">sarpras.smkwidyapraja.sch.id</code>).</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <!-- Method 3: Hosting cPanel Sekolah -->
+                        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                            <div>
+                                <div class="w-10 h-10 rounded-xl bg-amber-500 text-white flex items-center justify-center font-bold text-lg mb-3">
+                                    <i class="fa-solid fa-server"></i>
+                                </div>
+                                <h3 class="text-sm font-bold text-slate-800 mb-1">Cara 3: Hosting cPanel SMK</h3>
+                                <p class="text-xs text-slate-500 mb-4">Menggunakan server web resmi sekolah yang sudah ada.</p>
+                                
+                                <ol class="text-xs text-slate-600 space-y-2 list-decimal list-inside">
+                                    <li>Login ke cPanel web sekolah SMK Widya Praja.</li>
+                                    <li>Buka menu **File Manager -&gt; public_html** (atau buat subdomain <code class="bg-slate-100 px-1 py-0.5 rounded">sarpras.smkwidyapraja.sch.id</code>).</li>
+                                    <li>Upload file <code class="bg-slate-100 px-1 py-0.5 rounded">index.html</code> ke direktori tersebut.</li>
+                                    <li>Selesai! Website langsung dapat diakses secara publik oleh siswa dan guru.</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Download Code Button Bar -->
+                    <div class="bg-emerald-50 border border-emerald-200 p-6 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-emerald-600 text-white flex items-center justify-center text-xl shrink-0 shadow-md">
+                                <i class="fa-solid fa-file-code"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-emerald-950">Siap Dipublikasikan Sekarang!</h4>
+                                <p class="text-xs text-emerald-800">Unduh seluruh kode HTML aplikasi ini beserta konfigurasi data multiuser untuk langsung diunggah ke server web hosting.</p>
+                            </div>
+                        </div>
+                        <button onclick="downloadSelfHTML()" class="px-5 py-3 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold rounded-xl shadow-lg transition flex items-center gap-2 shrink-0">
+                            <i class="fa-solid fa-download text-sm"></i>
+                            <span>Unduh File index.html Siap Deploy</span>
+                        </button>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- MODAL 1: Tambah / Edit Barang -->
+    <div id="modalItem" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-white w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden border border-slate-100">
+            <div class="bg-slate-900 text-white px-6 py-4 flex items-center justify-between">
+                <h3 id="modalItemTitle" class="text-sm font-bold">Tambah Barang Inventaris Baru</h3>
+                <button onclick="closeModal('modalItem')" class="text-slate-400 hover:text-white"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <form id="formItem" onsubmit="saveItem(event)" class="p-6 space-y-4">
+                <input type="hidden" id="itemId">
+                
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-medium text-slate-700 mb-1">Kode Barang</label>
+                        <input type="text" id="itemKode" required="" class="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-lg" placeholder="INV-LAB-001">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-slate-700 mb-1">Kategori</label>
+                        <select id="itemKategori" required="" class="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-lg">
+                            <option value="Elektronik &amp; Laboratorium">Elektronik &amp; Lab</option>
+                            <option value="Perlengkapan Kelas">Perlengkapan Kelas</option>
+                            <option value="Olahraga">Olahraga</option>
+                            <option value="Kesenian &amp; Multimedia">Kesenian &amp; Multimedia</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-medium text-slate-700 mb-1">Nama Barang &amp; Merk</label>
+                    <input type="text" id="itemNama" required="" class="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-lg" placeholder="Proyektor Epson EB-X400">
+                </div>
+
+                <div class="grid grid-cols-3 gap-3">
+                    <div>
+                        <label class="block text-xs font-medium text-slate-700 mb-1">Jumlah Total</label>
+                        <input type="number" id="itemStokTotal" min="1" required="" class="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-lg" value="1">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-slate-700 mb-1">Kondisi</label>
+                        <select id="itemKondisi" required="" class="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-lg">
+                            <option value="Baik">Baik</option>
+                            <option value="Rusak Ringan">Rusak Ringan</option>
+                            <option value="Rusak Berat">Rusak Berat</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-slate-700 mb-1">Lokasi Ruang</label>
+                        <input type="text" id="itemLokasi" required="" class="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-lg" placeholder="Lab Komputer 1">
+                    </div>
+                </div>
+
+                <div class="flex justify-end gap-2 pt-4 border-t border-slate-100">
+                    <button type="button" onclick="closeModal('modalItem')" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold rounded-lg">Batal</button>
+                    <button type="submit" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold rounded-lg shadow-sm">Simpan Barang</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL 2: Form Ajukan Peminjaman -->
+    <div id="modalFormPinjam" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-white w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden border border-slate-100">
+            <div class="bg-brand-700 text-white px-6 py-4 flex items-center justify-between">
+                <h3 class="text-sm font-bold">Form Pengajuan Peminjaman Sarpras</h3>
+                <button onclick="closeModal('modalFormPinjam')" class="text-slate-300 hover:text-white"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <form id="formPinjam" onsubmit="submitFormPinjam(event)" class="p-6 space-y-4">
+                <div>
+                    <label class="block text-xs font-medium text-slate-700 mb-1">Pilih Barang</label>
+                    <select id="pinjamItemId" required="" class="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-lg"><option value="1">Proyektor LCD Epson EB-X400 (Tersedia: 5)</option><option value="2">Laptop ASUS Core i5 (Praktikum) (Tersedia: 16)</option><option value="3">Sound System Portable Wireless (Tersedia: 2)</option><option value="4">Bola Voli Molten Original (Tersedia: 8)</option><option value="5">Kursi Lipat Futura (Hitam) (Tersedia: 95)</option></select>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-medium text-slate-700 mb-1">Jumlah Pinjam</label>
+                        <input type="number" id="pinjamQty" min="1" value="1" required="" class="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-lg">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-slate-700 mb-1">Tanggal Pinjam</label>
+                        <input type="date" id="pinjamTgl" required="" class="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-lg">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-medium text-slate-700 mb-1">Keperluan / Kegunaan</label>
+                    <textarea id="pinjamKeperluan" rows="3" required="" class="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-lg" placeholder="Misal: Untuk kegiatan Presentasi Ujian Praktik di Kelas XII RPL..."></textarea>
+                </div>
+
+                <div class="flex justify-end gap-2 pt-4 border-t border-slate-100">
+                    <button type="button" onclick="closeModal('modalFormPinjam')" class="px-4 py-2 bg-slate-100 text-slate-700 text-xs font-bold rounded-lg">Batal</button>
+                    <button type="submit" class="px-4 py-2 bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold rounded-lg shadow-sm">Kirim Pengajuan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL 3: Form Pengaduan Kerusakan -->
+    <div id="modalFormPengaduan" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-white w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden border border-slate-100">
+            <div class="bg-rose-700 text-white px-6 py-4 flex items-center justify-between">
+                <h3 class="text-sm font-bold">Laporan Kerusakan / Perbaikan Sarpras</h3>
+                <button onclick="closeModal('modalFormPengaduan')" class="text-slate-300 hover:text-white"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <form id="formPengaduan" onsubmit="submitFormPengaduan(event)" class="p-6 space-y-4">
+                <div>
+                    <label class="block text-xs font-medium text-slate-700 mb-1">Pilih Barang Bermasalah</label>
+                    <select id="pengaduanItemId" required="" class="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-lg"><option value="1">Proyektor LCD Epson EB-X400 (Tersedia: 5)</option><option value="2">Laptop ASUS Core i5 (Praktikum) (Tersedia: 16)</option><option value="3">Sound System Portable Wireless (Tersedia: 2)</option><option value="4">Bola Voli Molten Original (Tersedia: 8)</option><option value="5">Kursi Lipat Futura (Hitam) (Tersedia: 95)</option></select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-medium text-slate-700 mb-1">Deskripsi Kerusakan / Kendala</label>
+                    <textarea id="pengaduanDeskripsi" rows="3" required="" class="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-lg" placeholder="Jelaskan secara detail kerusakan yang terjadi..."></textarea>
+                </div>
+
+                <div class="flex justify-end gap-2 pt-4 border-t border-slate-100">
+                    <button type="button" onclick="closeModal('modalFormPengaduan')" class="px-4 py-2 bg-slate-100 text-slate-700 text-xs font-bold rounded-lg">Batal</button>
+                    <button type="submit" class="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white text-xs font-bold rounded-lg shadow-sm">Kirim Laporan</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL 4: Tambah User (Admin) -->
+    <div id="modalAddUser" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm items-center justify-center p-4 hidden">
+        <div class="bg-white w-full max-w-md rounded-2xl shadow-2xl overflow-hidden border border-slate-100">
+            <div class="bg-slate-900 text-white px-6 py-4 flex items-center justify-between">
+                <h3 class="text-sm font-bold">Tambah Pengguna Multiuser Baru</h3>
+                <button onclick="closeModal('modalAddUser')" class="text-slate-400 hover:text-white"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <form id="formAddUser" onsubmit="saveNewUser(event)" class="p-6 space-y-4">
+                <div>
+                    <label class="block text-xs font-medium text-slate-700 mb-1">Nama Lengkap</label>
+                    <input type="text" id="newUserNama" required="" class="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-lg" placeholder="Drs. Bambang Wijaya">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-medium text-slate-700 mb-1">Email</label>
+                    <input type="email" id="newUserEmail" required="" class="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-lg" placeholder="bambang@smkwidyapraja.sch.id">
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-medium text-slate-700 mb-1">Hak Akses (Role)</label>
+                        <select id="newUserRole" required="" class="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-lg">
+                            <option value="admin">Admin</option>
+                            <option value="sarpras">Petugas Sarpras</option>
+                            <option value="user">User (Guru/Siswa)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-slate-700 mb-1">Password</label>
+                        <input type="password" id="newUserPass" required="" class="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-lg" value="123456">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-medium text-slate-700 mb-1">Jabatan / Kelas</label>
+                    <input type="text" id="newUserJabatan" class="w-full text-xs p-2.5 bg-slate-50 border border-slate-200 rounded-lg" placeholder="Guru Prod. RPL / XI TKJ 1">
+                </div>
+
+                <div class="flex justify-end gap-2 pt-4 border-t border-slate-100">
+                    <button type="button" onclick="closeModal('modalAddUser')" class="px-4 py-2 bg-slate-100 text-slate-700 text-xs font-bold rounded-lg">Batal</button>
+                    <button type="submit" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold rounded-lg shadow-sm">Simpan Akun</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Default Mock Data for SIM-SARPRAS SMK Widya Praja Ungaran
+        const INITIAL_USERS = [
+            { id: 1, name: "Admin Utama (Suprianto, S.Kom)", email: "admin@smkwidyapraja.sch.id", role: "admin", pass: "admin123", dept: "Kepala Lab & SIM", status: "Aktif" },
+            { id: 2, name: "Haryanto (Petugas Sarpras)", email: "sarpras@smkwidyapraja.sch.id", role: "sarpras", pass: "sarpras123", dept: "Staf Sarpras", status: "Aktif" },
+            { id: 3, name: "Ibu Nurul Hidayah, S.Pd", email: "guru@smkwidyapraja.sch.id", role: "user", pass: "guru123", dept: "Guru Produktif RPL", status: "Aktif" },
+            { id: 4, name: "Rizky Pratama (Siswa)", email: "siswa@smkwidyapraja.sch.id", role: "user", pass: "siswa123", dept: "Siswa - XII RPL 1", status: "Aktif" }
+        ];
+
+        const INITIAL_ITEMS = [
+            { id: 1, code: "INV-ELK-001", name: "Proyektor LCD Epson EB-X400", category: "Elektronik & Laboratorium", total: 8, available: 5, condition: "Baik", location: "Lab Komputer RPL 1" },
+            { id: 2, code: "INV-ELK-002", name: "Laptop ASUS Core i5 (Praktikum)", category: "Elektronik & Laboratorium", total: 20, available: 16, condition: "Baik", location: "Ruang Sarpras" },
+            { id: 3, code: "INV-AUD-001", name: "Sound System Portable Wireless", category: "Kesenian & Multimedia", total: 3, available: 2, condition: "Baik", location: "Aula Utama Sekolah" },
+            { id: 4, code: "INV-OLG-001", name: "Bola Voli Molten Original", category: "Olahraga", total: 10, available: 8, condition: "Baik", location: "Gudang Olahraga" },
+            { id: 5, code: "INV-KLS-001", name: "Kursi Lipat Futura (Hitam)", category: "Perlengkapan Kelas", total: 100, available: 95, condition: "Rusak Ringan", location: "Gudang Serbaguna" }
+        ];
+
+        const INITIAL_PEMINJAMAN = [
+            { id: 1, userId: 3, userName: "Ibu Nurul Hidayah, S.Pd", itemId: 1, itemName: "Proyektor LCD Epson EB-X400", qty: 1, datePinjam: "2026-10-01", dateKembali: "2026-10-02", status: "Disetujui", keperluan: "Mengajar Praktik Multimedia di XI RPL 2" },
+            { id: 2, userId: 4, userName: "Rizky Pratama (Siswa)", itemId: 4, itemName: "Bola Voli Molten Original", qty: 2, datePinjam: "2026-10-02", dateKembali: "-", status: "Pending", keperluan: "Latihan ekstra kurikuler voli sore hari" }
+        ];
+
+        const INITIAL_PENGADUAN = [
+            { id: 1, userId: 3, userName: "Ibu Nurul Hidayah, S.Pd", itemId: 1, itemName: "Proyektor LCD Epson EB-X400", desc: "Lampu indikator berkedip merah dan gambar buram.", date: "2026-09-28", status: "Proses Servis" }
+        ];
+
+        // Global State Variables
+        let state = {
+            currentUser: null,
+            users: JSON.parse(localStorage.getItem('sarpras_users')) || INITIAL_USERS,
+            items: JSON.parse(localStorage.getItem('sarpras_items')) || INITIAL_ITEMS,
+            peminjaman: JSON.parse(localStorage.getItem('sarpras_peminjaman')) || INITIAL_PEMINJAMAN,
+            pengaduan: JSON.parse(localStorage.getItem('sarpras_pengaduan')) || INITIAL_PENGADUAN,
+            currentTab: 'dashboard'
+        };
+
+        function saveData() {
+            localStorage.setItem('sarpras_users', JSON.stringify(state.users));
+            localStorage.setItem('sarpras_items', JSON.stringify(state.items));
+            localStorage.setItem('sarpras_peminjaman', JSON.stringify(state.peminjaman));
+            localStorage.setItem('sarpras_pengaduan', JSON.stringify(state.pengaduan));
+        }
+
+        function showToast(message, type = 'info') {
+            const container = document.getElementById('toastContainer');
+            const toast = document.createElement('div');
+            
+            const bgColors = {
+                success: 'bg-emerald-600 text-white',
+                error: 'bg-rose-600 text-white',
+                warning: 'bg-amber-500 text-white',
+                info: 'bg-slate-800 text-white'
+            };
+
+            const icons = {
+                success: 'fa-circle-check',
+                error: 'fa-triangle-exclamation',
+                warning: 'fa-triangle-exclamation',
+                info: 'fa-circle-info'
+            };
+
+            toast.className = `${bgColors[type]} p-3.5 rounded-xl shadow-xl flex items-center gap-3 text-xs font-semibold pointer-events-auto transform transition-all duration-300 opacity-0 translate-y-2`;
+            toast.innerHTML = `
+                <i class="fa-solid ${icons[type]} text-base"></i>
+                <span class="flex-1">${message}</span>
+                <button onclick="this.parentElement.remove()" class="opacity-70 hover:opacity-100"><i class="fa-solid fa-xmark"></i></button>
+            `;
+
+            container.appendChild(toast);
+            setTimeout(() => {
+                toast.classList.remove('opacity-0', 'translate-y-2');
+            }, 10);
+
+            setTimeout(() => {
+                toast.classList.add('opacity-0', 'translate-y-2');
+                setTimeout(() => toast.remove(), 300);
+            }, 3500);
+        }
+
+        function openLoginModal() {
+            document.getElementById('loginScreen').classList.remove('hidden');
+            document.getElementById('loginScreen').classList.add('flex');
+        }
+
+        function closeLoginModal() {
+            document.getElementById('loginScreen').classList.add('hidden');
+            document.getElementById('loginScreen').classList.remove('flex');
+        }
+
+        function quickLogin(role) {
+            const target = state.users.find(u => u.role === role);
+            if (target) {
+                document.getElementById('loginEmail').value = target.email;
+                document.getElementById('loginPassword').value = target.pass;
+                performLogin(target);
+            }
+        }
+
+        function handleLogin(e) {
+            e.preventDefault();
+            const email = document.getElementById('loginEmail').value;
+            const pass = document.getElementById('loginPassword').value;
+
+            const user = state.users.find(u => u.email.toLowerCase() === email.toLowerCase() && u.pass === pass);
+            if (user) {
+                performLogin(user);
+            } else {
+                showToast('Email atau Password salah!', 'error');
+            }
+        }
+
+        function performLogin(user) {
+            state.currentUser = user;
+            closeLoginModal();
+            updateUserUI();
+            switchTab('dashboard');
+            showToast(`Selamat datang, ${user.name} (${user.role.toUpperCase()})`, 'success');
+        }
+
+        function logout() {
+            openLoginModal();
+            showToast('Sesi akun telah diakhiri.', 'info');
+        }
+
+        function updateUserUI() {
+            if (!state.currentUser) return;
+
+            const user = state.currentUser;
+            document.getElementById('userName').textContent = user.name;
+            
+            const roleLabels = {
+                admin: { title: 'ADMINISTRATOR', bg: 'bg-brand-500/20 text-brand-300' },
+                sarpras: { title: 'PETUGAS SARPRAS', bg: 'bg-emerald-500/20 text-emerald-300' },
+                user: { title: 'GURU / SISWA', bg: 'bg-amber-500/20 text-amber-300' }
+            };
+
+            const roleInfo = roleLabels[user.role] || roleLabels['user'];
+            
+            const badge = document.getElementById('userBadge');
+            badge.textContent = roleInfo.title;
+            badge.className = `inline-block px-2 py-0.5 text-[9px] font-extrabold rounded ${roleInfo.bg} uppercase tracking-wider mt-0.5`;
+
+            document.getElementById('currentRoleTag').textContent = `Role: ${roleInfo.title}`;
+
+            // Handle RBAC visibility
+            const adminOnlyElements = document.querySelectorAll('.role-admin-only');
+            adminOnlyElements.forEach(el => {
+                el.style.display = (user.role === 'admin') ? 'flex' : 'none';
+            });
+
+            const adminSarprasElements = document.querySelectorAll('.role-admin-sarpras-only');
+            adminSarprasElements.forEach(el => {
+                el.style.display = (user.role === 'admin' || user.role === 'sarpras') ? 'inline-flex' : 'none';
+            });
+
+            // Refresh dashboards
+            renderDashboardStats();
+            renderInventoryTable();
+            renderPeminjamanTable();
+            renderPengaduanCards();
+            renderUsersTable();
+            populateSelectOptions();
+        }
+
+        function switchTab(tabId) {
+            state.currentTab = tabId;
+
+            // Hide all tab sections
+            document.querySelectorAll('.tab-section').forEach(sec => sec.classList.add('hidden'));
+            
+            // Show target section
+            const targetSec = document.getElementById(`section-${tabId}`);
+            if (targetSec) targetSec.classList.remove('hidden');
+
+            // Update nav link styles
+            document.querySelectorAll('.nav-item').forEach(nav => {
+                nav.classList.remove('bg-slate-800', 'text-white', 'font-bold');
+            });
+            const activeNav = document.getElementById(`nav-${tabId}`);
+            if (activeNav) activeNav.classList.add('bg-slate-800', 'text-white', 'font-bold');
+
+            // Update header title
+            const titles = {
+                dashboard: 'Dashboard Utama SARPRAS',
+                inventory: 'Katalog & Inventaris Barang Sekolah',
+                peminjaman: 'Pengajuan & Transaksi Peminjaman',
+                pengaduan: 'Laporan Kerusakan & Servis Aset',
+                users: 'Kelola Akun & Hak Akses Multiuser',
+                laporan: 'Rekapitulasi Laporan SARPRAS',
+                publikasi: 'Panduan & Langkah Publikasi Web'
+            };
+            document.getElementById('currentTabTitle').textContent = titles[tabId] || 'SARPRAS';
+
+            // Re-render chart if dashboard
+            if (tabId === 'dashboard') {
+                setTimeout(initCharts, 100);
+            }
+        }
+
+        function renderDashboardStats() {
+            const totalItems = state.items.reduce((acc, cur) => acc + cur.total, 0);
+            const totalDipinjam = state.peminjaman.filter(p => p.status === 'Disetujui').reduce((acc, cur) => acc + cur.qty, 0);
+            const pendingPinjam = state.peminjaman.filter(p => p.status === 'Pending').length;
+            const totalKerusakan = state.pengaduan.filter(p => p.status !== 'Selesai').length;
+
+            document.getElementById('statTotalBarang').textContent = totalItems;
+            document.getElementById('statSedangDipinjam').textContent = totalDipinjam;
+            document.getElementById('statPendingPinjam').textContent = pendingPinjam;
+            document.getElementById('statKerusakan').textContent = totalKerusakan;
+
+            // Update pending badge on nav
+            const badgePinjam = document.getElementById('badgePendingPinjam');
+            if (pendingPinjam > 0) {
+                badgePinjam.textContent = pendingPinjam;
+                badgePinjam.classList.remove('hidden');
+            } else {
+                badgePinjam.classList.add('hidden');
+            }
+
+            // Quick Actions Dynamic Button
+            const actionsDiv = document.getElementById('dashboardQuickActions');
+            document.getElementById('welcomeUserText').textContent = `Halo, ${state.currentUser.name}!`;
+
+            if (state.currentUser.role === 'user') {
+                actionsDiv.innerHTML = `
+                    <button onclick="switchTab('inventory')" class="px-3.5 py-2 bg-amber-400 hover:bg-amber-500 text-slate-900 text-xs font-bold rounded-lg shadow transition">
+                        <i class="fa-solid fa-magnifying-glass"></i> Cari & Pinjam Barang
+                    </button>
+                    <button onclick="openModalFormPengaduan()" class="px-3.5 py-2 bg-white/10 hover:bg-white/20 text-white text-xs font-bold rounded-lg transition border border-white/20">
+                        <i class="fa-solid fa-triangle-exclamation"></i> Laporkan Kerusakan
+                    </button>
+                `;
+            } else {
+                actionsDiv.innerHTML = `
+                    <button onclick="switchTab('peminjaman')" class="px-3.5 py-2 bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-bold rounded-lg shadow transition">
+                        <i class="fa-solid fa-check-double"></i> Verifikasi Peminjaman (${pendingPinjam})
+                    </button>
+                    <button onclick="openModalAddItem()" class="px-3.5 py-2 bg-white/10 hover:bg-white/20 text-white text-xs font-bold rounded-lg transition border border-white/20">
+                        <i class="fa-solid fa-plus"></i> Tambah Inventaris Baru
+                    </button>
+                `;
+            }
+        }
+
+        let chart1, chart2;
+        function initCharts() {
+            // Chart 1: Peminjaman Monthly
+            const ctx1 = document.getElementById('chartPeminjaman')?.getContext('2d');
+            if (ctx1) {
+                if (chart1) chart1.destroy();
+                chart1 = new Chart(ctx1, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Mei', 'Jun', 'Jul', 'Agt', 'Sep', 'Okt'],
+                        datasets: [{
+                            label: 'Jumlah Barang Dipinjam',
+                            data: [12, 19, 8, 15, 22, 18],
+                            backgroundColor: '#0284c7',
+                            borderRadius: 6
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: { legend: { display: false } }
+                    }
+                });
+            }
+
+            // Chart 2: Kondisi Doughnut
+            const ctx2 = document.getElementById('chartKondisi')?.getContext('2d');
+            if (ctx2) {
+                if (chart2) chart2.destroy();
+                chart2 = new Chart(ctx2, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Kondisi Baik', 'Rusak Ringan', 'Rusak Berat'],
+                        datasets: [{
+                            data: [
+                                state.items.filter(i => i.condition === 'Baik').length,
+                                state.items.filter(i => i.condition === 'Rusak Ringan').length,
+                                state.items.filter(i => i.condition === 'Rusak Berat').length
+                            ],
+                            backgroundColor: ['#10b981', '#f59e0b', '#ef4444']
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: { legend: { position: 'bottom' } }
+                    }
+                });
+            }
+        }
+
+        function renderInventoryTable() {
+            const tbody = document.getElementById('inventoryTableBody');
+            const search = document.getElementById('invSearchInput').value.toLowerCase();
+            const cat = document.getElementById('invCatFilter').value;
+
+            const filtered = state.items.filter(item => {
+                const matchSearch = item.name.toLowerCase().includes(search) || 
+                                    item.code.toLowerCase().includes(search) || 
+                                    item.location.toLowerCase().includes(search);
+                const matchCat = (cat === 'ALL') || (item.category === cat);
+                return matchSearch && matchCat;
+            });
+
+            if (filtered.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="7" class="p-6 text-center text-slate-400 text-xs">Tidak ada data barang inventaris yang cocok.</td></tr>`;
+                return;
+            }
+
+            const isStaff = (state.currentUser.role === 'admin' || state.currentUser.role === 'sarpras');
+
+            tbody.innerHTML = filtered.map(item => `
+                <tr class="hover:bg-slate-50 transition">
+                    <td class="p-3.5 font-mono text-[11px] font-bold text-slate-800">${item.code}</td>
+                    <td class="p-3.5">
+                        <span class="font-bold text-slate-800 block">${item.name}</span>
+                        <span class="text-[10px] text-slate-400">Total: ${item.total} Unit</span>
+                    </td>
+                    <td class="p-3.5"><span class="px-2 py-0.5 rounded-full bg-slate-100 text-slate-600 text-[10px] font-semibold">${item.category}</span></td>
+                    <td class="p-3.5 text-slate-600">${item.location}</td>
+                    <td class="p-3.5 text-center">
+                        <span class="font-bold ${item.available > 0 ? 'text-emerald-600' : 'text-rose-600'}">${item.available}</span> / ${item.total}
+                    </td>
+                    <td class="p-3.5 text-center">
+                        <span class="px-2 py-0.5 rounded text-[10px] font-bold ${
+                            item.condition === 'Baik' ? 'bg-emerald-100 text-emerald-700' :
+                            item.condition === 'Rusak Ringan' ? 'bg-amber-100 text-amber-700' : 'bg-rose-100 text-rose-700'
+                        }">
+                            ${item.condition}
+                        </span>
+                    </td>
+                    <td class="p-3.5 text-center">
+                        <div class="flex items-center justify-center gap-1">
+                            ${isStaff ? `
+                                <button onclick="editItem(${item.id})" class="p-1.5 text-slate-500 hover:text-brand-600 hover:bg-slate-100 rounded" title="Edit Barang"><i class="fa-solid fa-pen"></i></button>
+                                <button onclick="deleteItem(${item.id})" class="p-1.5 text-slate-500 hover:text-rose-600 hover:bg-slate-100 rounded" title="Hapus Barang"><i class="fa-solid fa-trash"></i></button>
+                            ` : ''}
+                            <button onclick="quickPinjam(${item.id})" class="px-2.5 py-1 bg-brand-600 hover:bg-brand-700 text-white rounded text-[10px] font-bold shadow-sm transition">
+                                Pinjam
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        function openModalAddItem() {
+            document.getElementById('modalItemTitle').textContent = 'Tambah Barang Inventaris Baru';
+            document.getElementById('itemId').value = '';
+            document.getElementById('formItem').reset();
+            document.getElementById('modalItem').classList.remove('hidden');
+            document.getElementById('modalItem').classList.add('flex');
+        }
+
+        function editItem(id) {
+            const item = state.items.find(i => i.id === id);
+            if (!item) return;
+
+            document.getElementById('modalItemTitle').textContent = 'Edit Data Barang Inventaris';
+            document.getElementById('itemId').value = item.id;
+            document.getElementById('itemKode').value = item.code;
+            document.getElementById('itemKategori').value = item.category;
+            document.getElementById('itemNama').value = item.name;
+            document.getElementById('itemStokTotal').value = item.total;
+            document.getElementById('itemKondisi').value = item.condition;
+            document.getElementById('itemLokasi').value = item.location;
+
+            document.getElementById('modalItem').classList.remove('hidden');
+            document.getElementById('modalItem').classList.add('flex');
+        }
+
+        function saveItem(e) {
+            e.preventDefault();
+            const id = document.getElementById('itemId').value;
+            const total = parseInt(document.getElementById('itemStokTotal').value);
+
+            if (id) {
+                // Edit
+                const idx = state.items.findIndex(i => i.id == id);
+                if (idx !== -1) {
+                    const oldTotal = state.items[idx].total;
+                    const diff = total - oldTotal;
+                    state.items[idx].code = document.getElementById('itemKode').value;
+                    state.items[idx].category = document.getElementById('itemKategori').value;
+                    state.items[idx].name = document.getElementById('itemNama').value;
+                    state.items[idx].total = total;
+                    state.items[idx].available = Math.max(0, state.items[idx].available + diff);
+                    state.items[idx].condition = document.getElementById('itemKondisi').value;
+                    state.items[idx].location = document.getElementById('itemLokasi').value;
+                    showToast('Data barang berhasil diperbarui!', 'success');
+                }
+            } else {
+                // New
+                const newItem = {
+                    id: Date.now(),
+                    code: document.getElementById('itemKode').value,
+                    category: document.getElementById('itemKategori').value,
+                    name: document.getElementById('itemNama').value,
+                    total: total,
+                    available: total,
+                    condition: document.getElementById('itemKondisi').value,
+                    location: document.getElementById('itemLokasi').value
+                };
+                state.items.unshift(newItem);
+                showToast('Barang baru berhasil ditambahkan!', 'success');
+            }
+
+            saveData();
+            closeModal('modalItem');
+            renderInventoryTable();
+            renderDashboardStats();
+        }
+
+        function deleteItem(id) {
+            state.items = state.items.filter(i => i.id !== id);
+            saveData();
+            renderInventoryTable();
+            renderDashboardStats();
+            showToast('Barang berhasil dihapus.', 'info');
+        }
+
+        function populateSelectOptions() {
+            const selectPinjam = document.getElementById('pinjamItemId');
+            const selectPengaduan = document.getElementById('pengaduanItemId');
+
+            const options = state.items.map(i => `<option value="${i.id}">${i.name} (Tersedia: ${i.available})</option>`).join('');
+            
+            if (selectPinjam) selectPinjam.innerHTML = options;
+            if (selectPengaduan) selectPengaduan.innerHTML = options;
+        }
+
+        function quickPinjam(itemId) {
+            populateSelectOptions();
+            document.getElementById('pinjamItemId').value = itemId;
+            openModalFormPinjam();
+        }
+
+        function openModalFormPinjam() {
+            populateSelectOptions();
+            document.getElementById('pinjamTgl').valueAsDate = new Date();
+            document.getElementById('modalFormPinjam').classList.remove('hidden');
+            document.getElementById('modalFormPinjam').classList.add('flex');
+        }
+
+        function submitFormPinjam(e) {
+            e.preventDefault();
+            const itemId = parseInt(document.getElementById('pinjamItemId').value);
+            const qty = parseInt(document.getElementById('pinjamQty').value);
+            const item = state.items.find(i => i.id === itemId);
+
+            if (!item || item.available < qty) {
+                showToast('Stok barang yang tersedia tidak mencukupi!', 'error');
+                return;
+            }
+
+            const newTrx = {
+                id: Date.now(),
+                userId: state.currentUser.id,
+                userName: state.currentUser.name,
+                itemId: item.id,
+                itemName: item.name,
+                qty: qty,
+                datePinjam: document.getElementById('pinjamTgl').value,
+                dateKembali: '-',
+                status: 'Pending',
+                keperluan: document.getElementById('pinjamKeperluan').value
+            };
+
+            state.peminjaman.unshift(newTrx);
+            saveData();
+            closeModal('modalFormPinjam');
+            renderPeminjamanTable();
+            renderDashboardStats();
+            showToast('Pengajuan peminjaman berhasil dikirim! Menunggu persetujuan Sarpras.', 'success');
+        }
+
+        function renderPeminjamanTable() {
+            const tbody = document.getElementById('peminjamanTableBody');
+            const isStaff = (state.currentUser.role === 'admin' || state.currentUser.role === 'sarpras');
+
+            // Users see their own loans, Admin/Sarpras see all
+            const list = isStaff 
+                ? state.peminjaman 
+                : state.peminjaman.filter(p => p.userId === state.currentUser.id);
+
+            if (list.length === 0) {
+                tbody.innerHTML = `<tr><td colspan="7" class="p-6 text-center text-slate-400 text-xs">Belum ada riwayat transaksi peminjaman.</td></tr>`;
+                return;
+            }
+
+            tbody.innerHTML = list.map(trx => `
+                <tr class="hover:bg-slate-50 transition">
+                    <td class="p-3.5 font-mono text-[11px] font-bold text-slate-500">TRX-${trx.id.toString().slice(-4)}</td>
+                    <td class="p-3.5 font-bold text-slate-800">${trx.userName}</td>
+                    <td class="p-3.5 text-slate-700">${trx.itemName}</td>
+                    <td class="p-3.5 text-slate-500 text-[11px]">${trx.datePinjam} s/d ${trx.dateKembali}</td>
+                    <td class="p-3.5 font-bold">${trx.qty} Unit</td>
+                    <td class="p-3.5 text-center">
+                        <span class="px-2.5 py-1 rounded-full text-[10px] font-extrabold ${
+                            trx.status === 'Disetujui' ? 'bg-emerald-100 text-emerald-700' :
+                            trx.status === 'Selesai' ? 'bg-blue-100 text-blue-700' :
+                            trx.status === 'Ditolak' ? 'bg-rose-100 text-rose-700' : 'bg-amber-100 text-amber-700'
+                        }">
+                            ${trx.status}
+                        </span>
+                    </td>
+                    <td class="p-3.5 text-center">
+                        ${isStaff && trx.status === 'Pending' ? `
+                            <div class="flex items-center justify-center gap-1">
+                                <button onclick="approvePinjam(${trx.id})" class="px-2 py-1 bg-emerald-600 text-white rounded text-[10px] font-bold shadow-sm hover:bg-emerald-700">Setujui</button>
+                                <button onclick="rejectPinjam(${trx.id})" class="px-2 py-1 bg-rose-600 text-white rounded text-[10px] font-bold shadow-sm hover:bg-rose-700">Tolak</button>
+                            </div>
+                        ` : ''}
+                        ${isStaff && trx.status === 'Disetujui' ? `
+                            <button onclick="returnPinjam(${trx.id})" class="px-2.5 py-1 bg-blue-600 text-white rounded text-[10px] font-bold shadow-sm hover:bg-blue-700">Proses Kembali</button>
+                        ` : ''}
+                        ${!isStaff || trx.status === 'Selesai' || trx.status === 'Ditolak' ? '<span class="text-slate-400 text-[10px]">-</span>' : ''}
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        function approvePinjam(id) {
+            const trx = state.peminjaman.find(p => p.id === id);
+            if (!trx) return;
+
+            const item = state.items.find(i => i.id === trx.itemId);
+            if (item && item.available >= trx.qty) {
+                item.available -= trx.qty;
+                trx.status = 'Disetujui';
+                saveData();
+                renderPeminjamanTable();
+                renderInventoryTable();
+                renderDashboardStats();
+                showToast('Peminjaman disetujui. Stok barang diperbarui!', 'success');
+            } else {
+                showToast('Gagal menyetujui, stok tidak mencukupi!', 'error');
+            }
+        }
+
+        function rejectPinjam(id) {
+            const trx = state.peminjaman.find(p => p.id === id);
+            if (trx) {
+                trx.status = 'Ditolak';
+                saveData();
+                renderPeminjamanTable();
+                renderDashboardStats();
+                showToast('Peminjaman ditolak.', 'info');
+            }
+        }
+
+        function returnPinjam(id) {
+            const trx = state.peminjaman.find(p => p.id === id);
+            if (trx && trx.status === 'Disetujui') {
+                const item = state.items.find(i => i.id === trx.itemId);
+                if (item) {
+                    item.available = Math.min(item.total, item.available + trx.qty);
+                }
+                trx.status = 'Selesai';
+                trx.dateKembali = new Date().toISOString().split('T')[0];
+                saveData();
+                renderPeminjamanTable();
+                renderInventoryTable();
+                renderDashboardStats();
+                showToast('Barang berhasil dikembalikan ke inventaris!', 'success');
+            }
+        }
+
+        function openModalFormPengaduan() {
+            populateSelectOptions();
+            document.getElementById('modalFormPengaduan').classList.remove('hidden');
+            document.getElementById('modalFormPengaduan').classList.add('flex');
+        }
+
+        function submitFormPengaduan(e) {
+            e.preventDefault();
+            const itemId = parseInt(document.getElementById('pengaduanItemId').value);
+            const item = state.items.find(i => i.id === itemId);
+
+            const newReport = {
+                id: Date.now(),
+                userId: state.currentUser.id,
+                userName: state.currentUser.name,
+                itemId: item.id,
+                itemName: item.name,
+                desc: document.getElementById('pengaduanDeskripsi').value,
+                date: new Date().toISOString().split('T')[0],
+                status: 'Dilaporkan'
+            };
+
+            state.pengaduan.unshift(newReport);
+            saveData();
+            closeModal('modalFormPengaduan');
+            renderPengaduanCards();
+            renderDashboardStats();
+            showToast('Laporan kerusakan berhasil terkirim ke Tim SARPRAS!', 'success');
+        }
+
+        function renderPengaduanCards() {
+            const grid = document.getElementById('pengaduanListGrid');
+            const isStaff = (state.currentUser.role === 'admin' || state.currentUser.role === 'sarpras');
+
+            if (state.pengaduan.length === 0) {
+                grid.innerHTML = `<div class="col-span-2 p-8 text-center text-slate-400 bg-white rounded-xl border border-slate-200">Belum ada laporan kerusakan barang.</div>`;
+                return;
+            }
+
+            grid.innerHTML = state.pengaduan.map(p => `
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="text-[10px] font-bold text-slate-400"><i class="fa-solid fa-calendar"></i> ${p.date}</span>
+                        <span class="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold ${
+                            p.status === 'Dilaporkan' ? 'bg-rose-100 text-rose-700' :
+                            p.status === 'Proses Servis' ? 'bg-amber-100 text-amber-700' : 'bg-emerald-100 text-emerald-700'
+                        }">${p.status}</span>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold text-slate-800">${p.itemName}</h4>
+                        <p class="text-[11px] text-slate-500 mt-1">${p.desc}</p>
+                    </div>
+                    <div class="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px]">
+                        <span class="text-slate-600">Pelapor: <strong>${p.userName}</strong></span>
+                        ${isStaff ? `
+                            <select onchange="updatePengaduanStatus(${p.id}, this.value)" class="text-[10px] font-bold py-1 px-2 bg-slate-100 rounded border border-slate-200">
+                                <option value="Dilaporkan" ${p.status === 'Dilaporkan' ? 'selected' : ''}>Dilaporkan</option>
+                                <option value="Proses Servis" ${p.status === 'Proses Servis' ? 'selected' : ''}>Proses Servis</option>
+                                <option value="Selesai" ${p.status === 'Selesai' ? 'selected' : ''}>Selesai Perbaikan</option>
+                            </select>
+                        ` : ''}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function updatePengaduanStatus(id, newStatus) {
+            const report = state.pengaduan.find(p => p.id === id);
+            if (report) {
+                report.status = newStatus;
+                saveData();
+                renderPengaduanCards();
+                renderDashboardStats();
+                showToast(`Status laporan diperbarui ke "${newStatus}".`, 'info');
+            }
+        }
+
+        function renderUsersTable() {
+            const tbody = document.getElementById('usersTableBody');
+            tbody.innerHTML = state.users.map(u => `
+                <tr class="hover:bg-slate-50 transition">
+                    <td class="p-3.5 font-bold text-slate-800">${u.name}</td>
+                    <td class="p-3.5 text-slate-600">${u.email}</td>
+                    <td class="p-3.5">
+                        <span class="px-2.5 py-0.5 rounded text-[10px] font-extrabold uppercase ${
+                            u.role === 'admin' ? 'bg-purple-100 text-purple-700' :
+                            u.role === 'sarpras' ? 'bg-emerald-100 text-emerald-700' : 'bg-amber-100 text-amber-700'
+                        }">${u.role}</span>
+                    </td>
+                    <td class="p-3.5 text-slate-600">${u.dept}</td>
+                    <td class="p-3.5 text-center"><span class="text-emerald-600 font-bold text-[10px]">${u.status}</span></td>
+                    <td class="p-3.5 text-center">
+                        ${u.id !== state.currentUser.id ? `
+                            <button onclick="deleteUser(${u.id})" class="text-rose-600 hover:text-rose-800 font-bold text-[11px] p-1">Hapus</button>
+                        ` : '<span class="text-slate-400 text-[10px]">Aktif</span>'}
+                    </td>
+                </tr>
+            `).join('');
+        }
+
+        function openModalAddUser() {
+            document.getElementById('modalAddUser').classList.remove('hidden');
+            document.getElementById('modalAddUser').classList.add('flex');
+        }
+
+        function saveNewUser(e) {
+            e.preventDefault();
+            const newUser = {
+                id: Date.now(),
+                name: document.getElementById('newUserNama').value,
+                email: document.getElementById('newUserEmail').value,
+                role: document.getElementById('newUserRole').value,
+                pass: document.getElementById('newUserPass').value,
+                dept: document.getElementById('newUserJabatan').value || 'Guru / Siswa',
+                status: 'Aktif'
+            };
+
+            state.users.push(newUser);
+            saveData();
+            closeModal('modalAddUser');
+            renderUsersTable();
+            showToast('Akun multiuser baru berhasil dibuat!', 'success');
+        }
+
+        function deleteUser(id) {
+            state.users = state.users.filter(u => u.id !== id);
+            saveData();
+            renderUsersTable();
+            showToast('User berhasil dihapus.', 'info');
+        }
+
+        function printReport(type) {
+            const printContainer = document.getElementById('printTableContainer');
+            document.getElementById('printDate').textContent = new Date().toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' });
+
+            if (type === 'inventaris') {
+                printContainer.innerHTML = `
+                    <h3 class="text-sm font-bold text-center mb-3">DAFTAR INVENTARIS SARANA PRASARANA</h3>
+                    <table class="w-full text-left text-xs border-collapse border border-slate-300">
+                        <thead>
+                            <tr class="bg-slate-100">
+                                <th class="border border-slate-300 p-2">Kode</th>
+                                <th class="border border-slate-300 p-2">Nama Barang</th>
+                                <th class="border border-slate-300 p-2">Kategori</th>
+                                <th class="border border-slate-300 p-2">Lokasi</th>
+                                <th class="border border-slate-300 p-2 text-center">Total</th>
+                                <th class="border border-slate-300 p-2 text-center">Kondisi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${state.items.map(i => `
+                                <tr>
+                                    <td class="border border-slate-300 p-2 font-mono">${i.code}</td>
+                                    <td class="border border-slate-300 p-2">${i.name}</td>
+                                    <td class="border border-slate-300 p-2">${i.category}</td>
+                                    <td class="border border-slate-300 p-2">${i.location}</td>
+                                    <td class="border border-slate-300 p-2 text-center">${i.total}</td>
+                                    <td class="border border-slate-300 p-2 text-center">${i.condition}</td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                `;
+            } else {
+                printContainer.innerHTML = `
+                    <h3 class="text-sm font-bold text-center mb-3">REKAPITULASI TRANSAKSI PEMINJAMAN</h3>
+                    <table class="w-full text-left text-xs border-collapse border border-slate-300">
+                        <thead>
+                            <tr class="bg-slate-100">
+                                <th class="border border-slate-300 p-2">Peminjam</th>
+                                <th class="border border-slate-300 p-2">Barang</th>
+                                <th class="border border-slate-300 p-2">Tgl Pinjam</th>
+                                <th class="border border-slate-300 p-2 text-center">Qty</th>
+                                <th class="border border-slate-300 p-2 text-center">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${state.peminjaman.map(p => `
+                                <tr>
+                                    <td class="border border-slate-300 p-2">${p.userName}</td>
+                                    <td class="border border-slate-300 p-2">${p.itemName}</td>
+                                    <td class="border border-slate-300 p-2">${p.datePinjam}</td>
+                                    <td class="border border-slate-300 p-2 text-center">${p.qty}</td>
+                                    <td class="border border-slate-300 p-2 text-center">${p.status}</td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                `;
+            }
+
+            window.print();
+        }
+
+        function openPublishModal() {
+            switchTab('publikasi');
+        }
+
+        function downloadSelfHTML() {
+            const htmlContent = document.documentElement.outerHTML;
+            const blob = new Blob([htmlContent], { type: 'text/html' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = 'index.html';
+            a.click();
+            showToast('File index.html siap publikasi berhasil diunduh!', 'success');
+        }
+
+        function exportDataJSON() {
+            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(state, null, 2));
+            const dlAnchorElem = document.createElement('a');
+            dlAnchorElem.setAttribute("href", dataStr);
+            dlAnchorElem.setAttribute("download", "sarpras_backup_data.json");
+            dlAnchorElem.click();
+            showToast('Backup data JSON berhasil diexport.', 'success');
+        }
+
+        function quickDemoDataReset() {
+            localStorage.clear();
+            state.users = INITIAL_USERS;
+            state.items = INITIAL_ITEMS;
+            state.peminjaman = INITIAL_PEMINJAMAN;
+            state.pengaduan = INITIAL_PENGADUAN;
+            saveData();
+            updateUserUI();
+            showToast('Data demo berhasil direset ke kondisi awal.', 'info');
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }
+        }
+
+        window.onload = function() {
+            // Auto login first user (Admin) by default for seamless preview
+            performLogin(state.users[0]);
+        };
+    </script>
+
+</body></html>
